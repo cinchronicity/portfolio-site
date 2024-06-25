@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About</title>
+    <link href="https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" type="text/css" href="css/style.production.css">
+    <link rel="Icon" href="img/c-favicon.png">
+</head>
+
+<body>
+    <header class="page-header">
+        <img src="img/c-l-triangle-logo.png" class="page-header__item" alt="Cindy Linares name logo">
+        <!-- Placeholder for logo, design using AI -->
+        <nav class="navigation__page-header-item">
+            <ul role="menubar" class="navigation-list">
+                <li role="presentation">
+                    <a href="index.html" aria-label="home page" role="menuitem" class="navigation-list__item">Home</a>
+                    <!-- this class name confuses me, why is there a space in btwn?-->
+                </li>
+                <li role="presentation">
+                    <a href="about.html" aria-label="about cindy"
+                        class="navigation-list__item navigation-list__item--active" role="menuitem">About</a>
+                </li>
+                <li role="presentation">
+                    <a href="work.html" aria-label="cindy's work" role="menuitem" class="navigation-list__item">Work</a>
+                </li>
+                <li role="presentation">
+                    <a href="contact.html" aria-label="contact cindy" role="menuitem"
+                        class="navigation-list__item">Contact</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="profile">
+        <img src=img/cindycontactphoto.jpeg class="profile__portrait" alt="Cindy Linares' Portrait">
+        <div>
+            <h1 id="About"> All about me!</h1>
+            <h2>My name is Cindy Linares</h2>
+            <p id="about-me">
+                I am an aspiring creative, looking to breakthrough in the tech industry during this exciting time of AI
+                integration. My excitement for AI integration comes with my desire to optimize my life in every possible
+                way. To me, I see so many use cases where AI can lift the weight off users, allowing increased time for
+                innovating the next best idea.
+                I have a curious mind and a passion for learning new things. I am excited to see where this journey
+                takes me. Being born in beautiful Los Angeles, California, I have immense appreciation for nature. I am
+                an adventure enthusiast always looking for excitement, and allowing
+                whatever opportunity arises to shape my future. As usual, ive been looking to increase my skillset and
+                have logged this on Github!
+                <a href="https://github.com/cinchronicity" target="_blank">Check out some of my code</a>
+            </p>
+            <div class="profile__text--link">
+                <h3> Take a look at some of my previous work experience</h3>
+                <!-- <a href="img/ResumeJan2.pdf" class="button" target="_blank">Download my Resume</a> -->
+            </div>
+        </div>
+        <!--the id was practicing linking to a diff section on the same page. like a recipe where you want to jump to the recipe from the top-->
+        <table class="table__work">
+            <thead>
+                <tr>
+                    <th scope="col">Skills</th>
+                    <th scope="col">Roles/Duties</th>
+                    <th scope="col">Years of Experience</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th scope="row">Website Designer</th>
+                    <td>Freelance work, using SEO, UI/UX design principles</td>
+                    <td>1</td>
+
+                </tr>
+                <tr>
+                    <th scope="row">House Manager</th>
+                    <td>Shopping, maintenance of household, cooking, tutoring children</td>
+                    <td>2</td>
+                </tr>
+                <tr>
+                    <th scope="row">Certified Nurse's Assistant</th>
+                    <td>Direct patient care, vital signs, data entry</td>
+                    <td>2</td>
+                </tr>
+            </tbody> <!-- thead and tbody are used to make the table more accessible to screen readers -->
+
+        </table>
+        <div class="profile__text--link">
+            <a href="img/ResumeJan2.pdf" class="button" target="_blank">Download my Resume</a>
+        </div>
+
+        <div id="sunrise__animation">
+            <img src="img/sunset-about.svg" alt="sunrise to sunset animation">
+        </div>
+    </main>
+    <footer class="page__footer">
+        <p> Connect with me!</p>
+        <div class="social__media">
+            <!--when i added this div it made the icons much smaller. before they grew to 530px each-->
+            <img src="img/github-logo.svg" alt="Github">
+            <img src="img/linkedin-logo.svg" alt="LinkedIn">
+            <img src="img/twitter-logo.svg" alt="Twitter">
+        </div>
+    </footer>
+
+    <script src="js/tota11y.min.js"></script>
+</body>
+
+</html>

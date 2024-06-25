@@ -1,0 +1,622 @@
+:root {
+  --primary-color: #207fa4;
+  --secondary-color: #477c9b;
+  --tertiary-color: #8b7252;
+  --button-color: #a89580;
+  --font-size: 18px;
+  --font-weight: 700;
+}
+
+/* colors used - changed most due to accesibility issues
+Salmon
+#E98973
+
+Khaki
+#E7D4C0 changed to #a89580
+
+Mint Blue
+#88B2CC
+
+Blue Gray
+#658EA9 https://www.canva.com/colors/color-palettes/backdoor-casual/
+*/
+
+body {
+  font-family: "Fjalla One", sans-serif;
+  font-weight: 400;
+  font-size: var(--font-size);
+  line-height: 1.6;
+}
+
+h1 {
+  font-size: 30px;
+  font-weight: var(--font-weight);
+  color: var(--primary-color);
+}
+
+h2 {
+  font-size: 24px;
+  font-weight: var(--font-weight);
+  color: var(--secondary-color);
+}
+
+h3 {
+  font-size: 20px;
+  font-weight: var(--font-weight);
+  color: var(--tertiary-color);
+}
+
+a {
+  color: #2b2b2b;
+}
+
+a:visited {
+  color: #2b2b2b;
+  /*changes color of link after it has been visited */
+}
+
+/* no underlining when hovering over a link, hover must come after visited, and active must come after hover */
+a:hover,
+a:focus {
+  text-decoration: none;
+}
+
+a:active {
+  color: #ffffff;
+  /*changes color of link when clicked */
+}
+
+button,
+.button,
+.github__button {
+  /* overwrites browser defaults and resets the border */
+  border: none;
+  display: inline-block;
+  /* takes the font from the outer container */
+  font-family: inherit;
+  /* styles the background color, font color, and text decoration (underline, etc.) of the button */
+  background-color: var(--button-color);
+  color: white;
+  text-decoration: none;
+  /*adds spacing to the button (this will be discussed more in-depth later) */
+  padding: 10px;
+  border-radius: 10px;
+  /* gives the button a bottom border with a width of 2px, a type of solid, and a color in RGBA format */
+  border-bottom: 2px solid rgba(0, 0, 0, 0.3);
+  /*opacity will change 0.2 s rather than instant*/
+  transition: opacity 0.2s;
+}
+
+button a,
+.github__button {
+  /* added this bc my primary button still had the default underline*/
+  text-decoration: none;
+}
+
+.button:hover,
+.button:focus,
+.github__button:hover,
+.github__button:focus {
+  /* lets the mouse appear as a hand when hovering over the button */
+  cursor: pointer;
+  /* reduces the opacity of the button to 80% */
+  opacity: 0.8;
+}
+
+.navigation-list__item {
+  text-decoration: none;
+}
+
+.navigation-list__item:hover {
+  text-decoration: underline;
+}
+
+.profile__portrait {
+  float: left;
+  width: 250px;
+  margin-right: 40px;
+  border-radius: 50%;
+}
+
+.profile {
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 20px;
+  text-align: justify;
+}
+
+.page__footer {
+  /* added this to clear the float- made the footer go below profile img- */
+  clear: both;
+}
+
+* {
+  /* added this to make sure all elements have the same box-sizing */
+  box-sizing: border-box;
+}
+
+.page__footer {
+  clear: both;
+  display: flex;
+  flex-direction: column; /* changed this to column to make "connect with me" stack on top of social media icons */
+  text-align: center;
+  padding-top: 120px;
+}
+
+.page-header {
+  display: flex;
+  width: 100%;
+  padding: 20px;
+  justify-content: space-between;
+}
+
+.page-header__item {
+  flex: 0 1 200px; /* =this way logo takes up 200px of space, and the nav takes up the rest */
+}
+
+.page-header,
+.page-header__item:last-child {
+  flex-grow: 1; /* =this way the nav takes up the rest of the space */
+  text-align: right;
+}
+
+.navigation-list {
+  list-style-type: none; /* removed the bullet points from the list */
+}
+
+.navigation-list li {
+  /* added this to make the nav items display inline target using li  */
+  display: inline-block;
+  margin-left: 15px;
+}
+/* start grid fallback*/
+.grid__item {
+  display: inline-block;
+  width: 33%;
+}
+/* end grid fallback*/
+
+@supports (display: grid) {
+  /* if the condition is true, use the css in this block */
+  .grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr; /* made 3 colums w width of 300px/1fraction*/
+    grid-gap: 20px;
+    padding: 20px;
+    text-align: center;
+  }
+
+  .grid__item {
+    background-color: lightgray;
+    width: auto;
+    min-height: auto;
+    margin: 10px;
+    transition: transform 0.2s ease; /*adds a smooth transition for  the transformation*/
+  }
+  .grid__item:hover {
+    transform: scale(1.05); /*inc size by5%on hover*/
+    cursor: pointer; /*change cursor to pointing hand*/
+  }
+  /*
+  .grid__item:last-child { i do not want this layout rn
+    grid-column-start: 3;  tell last child to be in 3rd col, start in 1st row, end at beg of 3rd row
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 3;
+  } */
+}
+
+#work-heading {
+  text-align: center;
+}
+
+.table__work {
+  table-layout: auto;
+  border: 3px solid grey;
+  text-align: center;
+}
+.table__work tbody {
+  font-weight: normal;
+}
+
+#about-me {
+  text-align: justify;
+}
+
+.grid__item-photo {
+  max-width: 100%;
+  width: 100%;
+  height: auto;
+}
+
+@media all and (max-width: 750px) {
+  .grid {
+    grid-gap: 10px;
+  }
+  .grid__item:last-child {
+    grid-column: auto/auto;
+    grid-row: auto/auto;
+  }
+  h1 {
+    font-size: 22px;
+  }
+}
+@media all and (max-width: 500px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+}
+@media all and (min-width: 500px) and (max-width: 750px) {
+  .grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.navigation-list__item--active {
+  text-decoration: underline; /*underlines the active page on nav bar*/
+}
+
+.profile__text {
+  display: flow-root;
+}
+
+.profile__text--link {
+  text-align: center;
+  padding: 10px;
+}
+
+/* COMMENTED OUT- INPUT STYLE INTO sunset-about.svg
+.sunrise__layer1, .sunrise__layer2, .sunrise__layer3, .sunrise__layer4 {
+  animation: 4s color-change infinite alternate linear;
+}
+
+@keyframes color-change { / *animation name is color-change here*/
+/* 0% {
+    fill: #c54a73; *
+  
+  0% {
+    fill: #fa6271;
+  }
+  50% {
+    fill: #fb996f;
+  }
+  100% {
+    fill: #fcbe6e;
+  }
+}
+
+.sunrise__layer-horizon, .sunrise__layer-water {
+  animation: 4s color-change-background infinite alternate linear;
+}
+
+@keyframes color-change-background { /*animation name is color-change-background here*
+  0% {
+    fill: #7d4389;
+   }
+   /*
+   50% {
+    fill: #000000;
+  }  *
+  100% {
+    fill:#75b5f1;
+  }
+}
+
+ .sunrise__layer-water--light {
+  animation: 4s color-change-water--light infinite alternate linear;
+}
+
+@keyframes color-change-water--light { /*animation name is color-change-background here*
+  0% {
+    fill: #ab64b9;
+  }
+  /* 50% {
+    fill: #b680b7; 
+  }*
+  100% {
+    fill:#81aed8;
+  }
+}
+
+.sunrise__layer-water--dark {
+  animation: 4s color-change-water--dark infinite alternate linear;
+}
+
+@keyframes color-change-water--dark { 
+  0% {
+    fill: #a251b0;
+  }
+  /* 50% {
+    fill: #6c67b4;
+  } *
+  100% {
+    fill:#5082b1;
+  }
+}
+
+.sunrise__layer-water--medium {
+  animation: 4s color-change-water--medium infinite alternate linear;
+}
+
+@keyframes color-change-water--medium { 
+  0% {
+    fill: #bd66cf; 
+  }
+  /* 50% {
+    fill: #ab61ba;
+  } *
+  100% {
+    fill:#4795d4;
+  }
+} 
+
+/* @keyframes cloud-move-top { NOTHING IS WORKING!!!!
+  from {
+    transform: translate(0, 50px);
+  }
+  to {
+    transform: translate(-200px, 50px);
+  }
+}
+.cloud__move-large {
+  animation-duration: 5s;
+  animation-name: cloud-move-top;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: linear;
+} */
+
+/* @keyframes cloud-move-bottom {
+  from {
+    transform:translate(0,50px);
+  }
+  to {
+    transform:translate(200px, 50px);
+  }
+}
+
+.cloud__move-small {
+  transform-origin:center;
+  animation: 10s cloud-move-bottom infinite alternate linear;
+} */
+
+#sunrise__animation {
+  text-align: center;
+}
+/*start of contact form*/
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+input {
+  font-family: "Montserrat", sans-serif;
+  font-weight: var(--font-weight);
+  letter-spacing: 1.4px;
+}
+
+.background {
+  display: flex;
+  /* min-height: 100vh; */
+}
+
+.container {
+  flex: 0 1 700px;
+  padding: 10px;
+  margin: auto;
+  margin-top: 100px;
+}
+
+.screen {
+  position: relative;
+  background: #3e3e3e;
+  border-radius: 15px;
+}
+
+.screen:after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 20px;
+  right: 20px;
+  bottom: 0;
+  border-radius: 15px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+  z-index: -1;
+}
+
+.screen-header {
+  display: flex;
+  align-items: center;
+  padding: 10px 20px;
+  background: #4d4d4f;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+
+.screen-header-left {
+  margin-right: auto;
+}
+
+.screen-header-button {
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  margin-right: 3px;
+  border-radius: 8px;
+  background: white;
+}
+
+.screen-header-button.close {
+  background: #ed1c6f;
+}
+
+.screen-header-button.maximize {
+  background: #e8e925;
+}
+
+.screen-header-button.minimize {
+  background: #74c54f;
+}
+
+.screen-header-right {
+  display: flex;
+}
+
+.screen-header-ellipsis {
+  width: 3px;
+  height: 3px;
+  margin-left: 2px;
+  border-radius: 8px;
+  background: #999;
+}
+
+.screen-body {
+  display: flex;
+}
+
+.screen-body-item {
+  flex: 1;
+  padding: 50px;
+}
+
+.screen-body-item.left {
+  display: flex;
+  flex-direction: column;
+}
+
+.app-title {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  color: #fff;
+  font-size: 26px;
+}
+
+.app-title:after {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+  width: 25px;
+  height: 4px;
+  background: #fff;
+}
+
+.app-contact {
+  margin-top: auto;
+  font-size: 14px;
+  color: #888;
+  text-decoration: none;
+}
+
+.app-form-group {
+  margin-bottom: 15px;
+}
+
+.app-form-group.message {
+  margin-top: 40px;
+}
+
+.app-form-group.buttons {
+  margin-bottom: 0;
+  text-align: right;
+}
+
+.app-form-control {
+  width: 100%;
+  padding: 10px 0;
+  background: none;
+  border: none;
+  border-bottom: 1px solid #666;
+  color: #ddd;
+  font-size: 14px;
+  text-transform: uppercase;
+  outline: none;
+  transition: border-color 0.2s;
+}
+
+.app-form-control::placeholder {
+  color: #666;
+}
+
+.app-form-control:focus {
+  border-bottom-color: #ddd;
+}
+
+.app-form-button {
+  background: none;
+  border: none;
+  color: #fff;
+  font-size: 14px;
+  cursor: pointer;
+  outline: none;
+}
+
+.app-form-button:hover {
+  color: #bbc2c7;
+  scale: 2px;
+}
+
+/* not using this rn .credits {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  color: #a8a8a8;
+  font-family: 'Roboto Condensed', sans-serif;
+  font-size: 16px;
+  font-weight: normal;
+}
+
+.credits-link {
+  display: flex;
+  align-items: center;
+  color: #fff;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.dribbble {
+  width: 20px;
+  height: 20px;
+  margin: 0 5px;
+} */
+
+@media screen and (max-width: 520px) {
+  .screen-body {
+    flex-direction: column;
+  }
+
+  .screen-body-item.left {
+    margin-bottom: 30px;
+  }
+
+  .app-title {
+    flex-direction: row;
+  }
+
+  .app-title span {
+    margin-right: 12px;
+  }
+
+  .app-title:after {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .screen-body {
+    padding: 40px;
+  }
+
+  .screen-body-item {
+    padding: 0;
+  }
+}
+/*end of contact form*/

@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact me</title>
+    <link href="https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" type="text/css" href="css/style.production.css">
+    <link rel="Icon" href="img/c-favicon.png">
+</head>
+
+<body>
+
+    <header class="page-header">
+        <img src="img/c-l-triangle-logo.png" class="page-header__item" alt="Cindy Linares name logo">
+        <!-- Placeholder for logo, design using AI -->
+        <nav class="navigation__page-header-item">
+            <ul role="menubar" class="navigation-list">
+                <li role="presentation">
+                    <a href="index.html" aria-label="home page" role="menuitem" class="navigation-list__item">Home</a>
+                    <!-- this class name confuses me, why is there a space in btwn?-->
+                </li>
+                <li role="presentation">
+                    <a href="about.html" aria-label="about cindy" class="navigation-list__item"
+                        role="menuitem">About</a>
+                </li>
+                <li role="presentation">
+                    <a href="work.html" aria-label="cindy's work" role="menuitem" class="navigation-list__item">Work</a>
+                </li>
+                <li role="presentation">
+                    <a href="contact.html" aria-label="contact cindy" role="menuitem"
+                        class="navigation-list__item navigation-list__item--active">Contact</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <div class="background">
+        <div class="container">
+            <div class="screen">
+                <div class="screen-header">
+                    <div class="screen-header-left">
+                        <div class="screen-header-button close"></div>
+                        <div class="screen-header-button maximize"></div>
+                        <div class="screen-header-button minimize"></div>
+                    </div>
+                    <div class="screen-header-right">
+                        <div class="screen-header-ellipsis"></div>
+                        <div class="screen-header-ellipsis"></div>
+                        <div class="screen-header-ellipsis"></div>
+                    </div>
+                </div>
+                <div class="screen-body">
+                    <div class="screen-body-item left">
+                        <div class="app-title">
+                            <span>CONTACT</span>
+                            <span>ME</span>
+                        </div>
+                        <div class="app-contact">
+                            <br>Kenmore, WA
+                            <br> +1 (111)-222-3333
+                            <br>
+                            <a class="app-contact" href="mailto:cindyblinares@gmail.com"> cindyblinares@gmail.com </a>
+                        </div>
+                    </div>
+                    <div class="screen-body-item">
+                        <div class="app-form">
+                            <div class="app-form-group">
+                                <input class="app-form-control" placeholder="NAME">
+                            </div>
+                            <div class="app-form-group">
+                                <input class="app-form-control" placeholder="EMAIL">
+                            </div>
+                            <div class="app-form-group">
+                                <input class="app-form-control" placeholder="CONTACT NO">
+                            </div>
+                            <div class="app-form-group message">
+                                <input class="app-form-control" placeholder="MESSAGE">
+                            </div>
+                            <div class="app-form-group buttons">
+                                <button class="app-form-button">CANCEL</button>
+                                <button class="app-form-button">SEND</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+
+
+    <!-- old contact form <div class="profile">
+            <h1> Contact </h1>
+            <div>
+                <form action="#" method="post" id="contact-form">
+                    <label class="standard-label" for="contact-email">E-mail: </label>
+                    <input type="email" id="contact-email" required>
+
+                    <label class="standard-label" for="contact-telephone">Telephone: </label>
+                    <input type="tel" pattern="\d{3}[\-]\d{3}[\-]\d{4}" id="contact-telephone">
+
+                    <label class="standard-label" for="contact-message">Message: </label>
+                    <textarea maxlength="240" id="contact-message" required></textarea>
+                    
+                    the id in input and for attribute in label lets users click on email and the cursor goes into that text box- for accessibility
+
+                    <input type="submit" value="Send message">
+                </form>
+
+                <p>
+                    Kenmore, WA 98028
+                </p>
+                <a href="tel:+1(123)-456-7891"> Phone: +1(123)-456-7891 </a>
+                <br>  Line break so email and phone not on same line 
+                <a href="mailto:cindyblinares@gmail.com"> cindyblinares@gmail.com </a>
+            </div>
+            <a href="https://github.com/cinchronicity" target="_blank">Check out some of my code</a>
+        </div> -->
+    <footer class="page__footer">
+        <p> Connect with me!</p>
+        <div class="social__media">
+            <img src="img/github-logo.svg" alt="Github">
+            <img src="img/linkedin-logo.svg" alt="LinkedIn">
+            <img src="img/twitter-logo.svg" alt="Twitter">
+        </div>
+    </footer>
+
+    <script src="js/tota11y.min.js"></script>
+
+</body>
+
+</html>

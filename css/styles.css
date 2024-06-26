@@ -187,10 +187,11 @@ button a,
   }
 
   .grid__item {
-    background-color: lightgray;
+    background-color: #e6e6e6;
     width: auto;
     min-height: auto;
     margin: 10px;
+    padding: 10px;
     transition: transform 0.2s ease; /*adds a smooth transition for  the transformation*/
   }
   .grid__item:hover {

@@ -28,6 +28,13 @@ body {
   line-height: 1.6;
 }
 
+main {
+  margin: 150px auto 0;
+  padding: 0 20px;
+  text-align: center;
+  /* max-width: 700px; */
+}
+
 h1 {
   font-size: 30px;
   font-weight: var(--font-weight);
@@ -114,15 +121,15 @@ button a,
 .profile__portrait {
   float: left;
   width: 250px;
-  margin-right: 40px;
+  /* margin-right: 40px; */
   border-radius: 50%;
+  margin: 20px;
 }
 
 .profile {
   max-width: 700px;
-  margin: 0 auto;
-  padding: 20px;
-  text-align: justify;
+  margin: 150px auto;
+  padding: 0px 20px;
 }
 
 .page__footer {
@@ -147,21 +154,33 @@ button a,
   display: flex;
   width: 100%;
   padding: 20px;
-  justify-content: space-between;
+  text-align: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  min-width: auto;
+  border-bottom: 1px solid gray;
+  background-color: white;
+  z-index: 1; /*added this bc contact.html screen was going above the nav bar */
 }
 
 .page-header__item {
-  flex: 0 1 200px; /* =this way logo takes up 200px of space, and the nav takes up the rest */
+  flex: 0 1 auto; /* =this way logo takes up 200px of space, and the nav takes up the rest */
 }
-
+.navigation__page-header-item:last-child {
+  text-align: right;
+  flex-grow: 1;
+}
+/*
 .page-header,
 .page-header__item:last-child {
-  flex-grow: 1; /* =this way the nav takes up the rest of the space */
-  text-align: right;
-}
+  flex-grow: 1; =this way the nav takes up the rest of the space 
+  text-align: center;
+}*/
 
 .navigation-list {
   list-style-type: none; /* removed the bullet points from the list */
+  padding-inline-start: 0;
 }
 
 .navigation-list li {
@@ -182,7 +201,7 @@ button a,
     display: grid;
     grid-template-columns: 1fr 1fr 1fr; /* made 3 colums w width of 300px/1fraction*/
     grid-gap: 20px;
-    padding: 20px;
+    /* padding: 20px; */
     text-align: center;
   }
 
@@ -230,29 +249,6 @@ button a,
   height: auto;
 }
 
-@media all and (max-width: 750px) {
-  .grid {
-    grid-gap: 10px;
-  }
-  .grid__item:last-child {
-    grid-column: auto/auto;
-    grid-row: auto/auto;
-  }
-  h1 {
-    font-size: 22px;
-  }
-}
-@media all and (max-width: 500px) {
-  .grid {
-    grid-template-columns: 1fr;
-  }
-}
-@media all and (min-width: 500px) and (max-width: 750px) {
-  .grid {
-    grid-template-columns: 1fr 1fr;
-  }
-}
-
 .navigation-list__item--active {
   text-decoration: underline; /*underlines the active page on nav bar*/
 }
@@ -266,120 +262,7 @@ button a,
   padding: 10px;
 }
 
-/* COMMENTED OUT- INPUT STYLE INTO sunset-about.svg
-.sunrise__layer1, .sunrise__layer2, .sunrise__layer3, .sunrise__layer4 {
-  animation: 4s color-change infinite alternate linear;
-}
-
-@keyframes color-change { / *animation name is color-change here*/
-/* 0% {
-    fill: #c54a73; *
-  
-  0% {
-    fill: #fa6271;
-  }
-  50% {
-    fill: #fb996f;
-  }
-  100% {
-    fill: #fcbe6e;
-  }
-}
-
-.sunrise__layer-horizon, .sunrise__layer-water {
-  animation: 4s color-change-background infinite alternate linear;
-}
-
-@keyframes color-change-background { /*animation name is color-change-background here*
-  0% {
-    fill: #7d4389;
-   }
-   /*
-   50% {
-    fill: #000000;
-  }  *
-  100% {
-    fill:#75b5f1;
-  }
-}
-
- .sunrise__layer-water--light {
-  animation: 4s color-change-water--light infinite alternate linear;
-}
-
-@keyframes color-change-water--light { /*animation name is color-change-background here*
-  0% {
-    fill: #ab64b9;
-  }
-  /* 50% {
-    fill: #b680b7; 
-  }*
-  100% {
-    fill:#81aed8;
-  }
-}
-
-.sunrise__layer-water--dark {
-  animation: 4s color-change-water--dark infinite alternate linear;
-}
-
-@keyframes color-change-water--dark { 
-  0% {
-    fill: #a251b0;
-  }
-  /* 50% {
-    fill: #6c67b4;
-  } *
-  100% {
-    fill:#5082b1;
-  }
-}
-
-.sunrise__layer-water--medium {
-  animation: 4s color-change-water--medium infinite alternate linear;
-}
-
-@keyframes color-change-water--medium { 
-  0% {
-    fill: #bd66cf; 
-  }
-  /* 50% {
-    fill: #ab61ba;
-  } *
-  100% {
-    fill:#4795d4;
-  }
-} 
-
-/* @keyframes cloud-move-top { NOTHING IS WORKING!!!!
-  from {
-    transform: translate(0, 50px);
-  }
-  to {
-    transform: translate(-200px, 50px);
-  }
-}
-.cloud__move-large {
-  animation-duration: 5s;
-  animation-name: cloud-move-top;
-  animation-iteration-count: infinite;
-  animation-direction: alternate;
-  animation-timing-function: linear;
-} */
-
-/* @keyframes cloud-move-bottom {
-  from {
-    transform:translate(0,50px);
-  }
-  to {
-    transform:translate(200px, 50px);
-  }
-}
-
-.cloud__move-small {
-  transform-origin:center;
-  animation: 10s cloud-move-bottom infinite alternate linear;
-} */
+/*INPUT STYLE from about.html animation INTO sunset-about.svg*/
 
 #sunrise__animation {
   text-align: center;
@@ -416,8 +299,8 @@ input {
   background: #3e3e3e;
   border-radius: 15px;
 }
-
-.screen:after {
+/* 
+.screen:after { causing issues to UI
   content: "";
   display: block;
   position: absolute;
@@ -428,7 +311,7 @@ input {
   border-radius: 15px;
   box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
   z-index: -1;
-}
+} */
 
 .screen-header {
   display: flex;
@@ -498,7 +381,7 @@ input {
   font-size: 26px;
 }
 
-.app-title:after {
+/* .app-title:after { UI issues 
   content: "";
   display: block;
   position: absolute;
@@ -507,7 +390,7 @@ input {
   width: 25px;
   height: 4px;
   background: #fff;
-}
+} */
 
 .app-contact {
   margin-top: auto;
@@ -589,6 +472,55 @@ input {
   margin: 0 5px;
 } */
 
+@media all and (max-width: 750px) {
+  .grid {
+    grid-gap: 10px;
+  }
+  .grid__item:last-child {
+    grid-column: auto/auto;
+    grid-row: auto/auto;
+  }
+  /* h1 {
+    font-size: 22px;
+  } */
+  .profile {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 340px 10px 0;
+  }
+  .page-header {
+    flex-direction: column;
+    padding: 0;
+  }
+  .navigation__page-header-item:last-child {
+    text-align: center;
+  }
+  .page-header img {
+    width: 100%;
+  }
+  .navigation-list {
+    padding: 0;
+  }
+  main {
+    margin: 330px 10px 0;
+  }
+}
+@media all and (max-width: 500px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+  .sunrise-img {
+    width: 100%;
+  }
+}
+@media all and (min-width: 500px) and (max-width: 750px) {
+  .grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
 @media screen and (max-width: 520px) {
   .screen-body {
     flex-direction: column;
@@ -598,9 +530,9 @@ input {
     margin-bottom: 30px;
   }
 
-  .app-title {
+  /* .app-title { UI weird for small screens
     flex-direction: row;
-  }
+  } */
 
   .app-title span {
     margin-right: 12px;

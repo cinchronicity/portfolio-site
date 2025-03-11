@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cindy's Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" type="text/css" href="css/style.production.css">
+    <link rel="Icon" href="img/c-favicon.png">
+
+</head>
+
+<body>
+    <header class="page-header">
+        <img src="img/c-l-triangle-logo.png" class="page-header__item" alt="Cindy Linares name logo">
+        <!-- Placeholder for logo, design using AI -->
+        <nav class="navigation__page-header-item">
+            <ul role="menubar" class="navigation-list">
+                <li role="presentation">
+                    <a href="index.html" aria-label="home page" role="menuitem" class="navigation-list__item">Home</a>
+                    <!-- this class name confuses me, why is there a space in btwn and why active?-->
+                </li>
+                <li role="presentation">
+                    <a href="about.html" aria-label="about cindy" class="navigation-list__item"
+                        role="menuitem">About</a>
+                </li>
+                <li role="presentation">
+                    <a href="projects.html" aria-label="cindy's work" role="menuitem"
+                        class="navigation-list__item navigation-list__item--active">Work</a>
+                </li>
+                <li role="presentation">
+                    <a href="contact.html" aria-label="contact cindy" role="menuitem"
+                        class="navigation-list__item">Contact</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1 id="work-heading"> Projects </h1>
+        <div class="grid">
+            <div class="grid__item">
+                <img src="img/pokedex2.png" class="grid__item-photo" alt="Pokemon Pokedex">
+                <h2> Pokedex</h2>
+                <p> The Pokedex App is a simple web application that provides a catalog of Pokémon. It fetches data from an external API (the Pokémon API) and allows users to view details about each Pokémon. The app is designed to be user-friendly and responsive, making it accessible on various devices. </p>
+                <a href="https://github.com/cinchronicity/Pokedex-App"  target="_blank" class="button__primary" > See Project on GitHub</a>
+            </div>
+            <div class="grid__item">
+                <img src="img/flixhive-app.png" class="grid__item-photo" alt="FlixHive movie app">
+                <h2> FLixHive </h2>
+                <p> This movie database application allows users to browse, search, and explore details about movies, directors, and genres, with additional functionalities for user account management and personalization. FlixHive was built using the MERN stack, integrating seamlessly with a MongoDB database and an Express API for full CRUD functionality.
+
+                </p>
+                <a href="https://github.com/cinchronicity/FlixHive-client"  class="button__primary" target="_blank"> See Project on GitHub</a>
+            </div>
+            
+            <div class="grid__item">
+                <img src="img/meet-app-overview.png" class="grid__item-photo" alt="Meet App">
+                <h2> Meet </h2> 
+                <p> The Meet Events App is a web application designed to help users find and explore events based on their interests and locations. The primary objective of the app is to provide users with a seamless experience for discovering events, viewing event details, and managing their event preferences. The app also supports offline functionality, allowing users to access cached event data even when they are not connected to the internet.
+                </p>
+                <a href="https://github.com/cinchronicity/Meet" class="button__primary" target="_blank"> See Project on GitHub</a>
+            </div>
+            
+            
+         
+
+        </div>
+    </main>
+
+    <footer class="page__footer">
+        <p> Connect with me!</p>
+        <div class="social__media">
+            <img src="img/github-logo.svg" alt="Github">
+            <img src="img/linkedin-logo.svg" alt="LinkedIn">
+            <img src="img/twitter-logo.svg" alt="Twitter">
+        </div>
+    </footer>
+    <script src="js/tota11y.min.js"></script>
+</body>
+
+</html>

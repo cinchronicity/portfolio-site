@@ -6,21 +6,6 @@
   --font-size: 18px;
   --font-weight: 700;
 }
-
-/* colors used - changed most due to accesibility issues
-Salmon
-#E98973
-
-Khaki
-#E7D4C0 changed to #a89580
-
-Mint Blue
-#88B2CC
-
-Blue Gray
-#658EA9 https://www.canva.com/colors/color-palettes/backdoor-casual/
-*/
-
 body {
   font-family: "Fjalla One", sans-serif;
   font-weight: 400;
@@ -171,12 +156,7 @@ button a,
   text-align: right;
   flex-grow: 1;
 }
-/*
-.page-header,
-.page-header__item:last-child {
-  flex-grow: 1; =this way the nav takes up the rest of the space 
-  text-align: center;
-}*/
+
 
 .navigation-list {
   list-style-type: none; /* removed the bullet points from the list */
@@ -217,13 +197,6 @@ button a,
     transform: scale(1.05); /*inc size by5%on hover*/
     cursor: pointer; /*change cursor to pointing hand*/
   }
-  /*
-  .grid__item:last-child { i do not want this layout rn
-    grid-column-start: 3;  tell last child to be in 3rd col, start in 1st row, end at beg of 3rd row
-    grid-column-end: 3;
-    grid-row-start: 1;
-    grid-row-end: 3;
-  } */
 }
 
 #work-heading {
@@ -246,7 +219,7 @@ button a,
 .grid__item-photo {
   max-width: 100%;
   width: 100%;
-  height: auto;
+  height: 355px;
 }
 
 .navigation-list__item--active {
@@ -267,6 +240,9 @@ button a,
 #sunrise__animation {
   text-align: center;
 }
+
+
+
 /*start of contact form*/
 *,
 *:before,
@@ -299,19 +275,7 @@ input {
   background: #3e3e3e;
   border-radius: 15px;
 }
-/* 
-.screen:after { causing issues to UI
-  content: "";
-  display: block;
-  position: absolute;
-  top: 0;
-  left: 20px;
-  right: 20px;
-  bottom: 0;
-  border-radius: 15px;
-  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
-  z-index: -1;
-} */
+
 
 .screen-header {
   display: flex;
@@ -381,16 +345,6 @@ input {
   font-size: 26px;
 }
 
-/* .app-title:after { UI issues 
-  content: "";
-  display: block;
-  position: absolute;
-  left: 0;
-  bottom: -10px;
-  width: 25px;
-  height: 4px;
-  background: #fff;
-} */
 
 .app-contact {
   margin-top: auto;
@@ -447,31 +401,6 @@ input {
   scale: 2px;
 }
 
-/* not using this rn .credits {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-top: 20px;
-  color: #a8a8a8;
-  font-family: 'Roboto Condensed', sans-serif;
-  font-size: 16px;
-  font-weight: normal;
-}
-
-.credits-link {
-  display: flex;
-  align-items: center;
-  color: #fff;
-  font-weight: bold;
-  text-decoration: none;
-}
-
-.dribbble {
-  width: 20px;
-  height: 20px;
-  margin: 0 5px;
-} */
-
 @media all and (max-width: 750px) {
   .grid {
     grid-gap: 10px;
@@ -480,9 +409,6 @@ input {
     grid-column: auto/auto;
     grid-row: auto/auto;
   }
-  /* h1 {
-    font-size: 22px;
-  } */
   .profile {
     display: flex;
     flex-direction: column;
@@ -529,11 +455,6 @@ input {
   .screen-body-item.left {
     margin-bottom: 30px;
   }
-
-  /* .app-title { UI weird for small screens
-    flex-direction: row;
-  } */
-
   .app-title span {
     margin-right: 12px;
   }

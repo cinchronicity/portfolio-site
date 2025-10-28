@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pokedex Project - Cindy's Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap" rel="stylesheet">
+  <link rel="stylesheet" type="text/css"
+    href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+  <link rel="stylesheet" type="text/css" href="css/styles.css">
+  <link rel="Icon" href="img/c-favicon.png">
+</head>
+
+<body>
+  <header class="page-header">
+    <img src="img/c-l-triangle-logo.png" class="page-header__item" alt="Cindy Linares name logo">
+    <nav class="navigation__page-header-item">
+      <ul role="menubar" class="navigation-list">
+        <li role="presentation">
+          <a href="index.html" aria-label="home page" role="menuitem" class="navigation-list__item">Home</a>
+        </li>
+        <li role="presentation">
+          <a href="about.html" aria-label="about cindy" class="navigation-list__item" role="menuitem">About</a>
+        </li>
+        <li role="presentation">
+          <a href="projects.html" aria-label="cindy's work" role="menuitem" class="navigation-list__item">Work</a>
+        </li>
+        <li role="presentation">
+          <a href="contact.html" aria-label="contact cindy" role="menuitem" class="navigation-list__item">Contact</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h1 class="project-title">Pokédex Project</h1>
+
+    <!-- Hero Section -->
+    <section class="project-hero">
+      <p class="tagline">A responsive JavaScript Pokédex app that fetches data from an external API and displays
+        detailed Pokémon information.</p>
+      <img src="img/pokedex-info.png" alt="Screenshot of Pokédex app interface" class="project-hero-img">
+    </section>
+
+    <!-- Main Layout: Sidebar + Content -->
+    <div class="project-layout">
+      <!-- Sidebar -->
+      <aside class="project-sidebar">
+        <!-- Tech Stack - Emphasized -->
+        <div class="sidebar-section tech-stack-section">
+          <h3>🛠️ Tech Stack</h3>
+          <div class="tech-tags">
+            <span class="tech-tag">HTML5</span>
+            <span class="tech-tag">CSS3</span>
+            <span class="tech-tag">JavaScript</span>
+            <span class="tech-tag">ES6+</span>
+            <span class="tech-tag">Fetch API</span>
+            <span class="tech-tag">PokéAPI</span>
+            <span class="tech-tag">ESLint</span>
+            <span class="tech-tag">Prettier</span>
+          </div>
+        </div>
+
+        <!-- Quick Links -->
+        <div class="sidebar-section">
+          <h3>🔗 Quick Links</h3>
+          <div class="quick-links">
+            <a href="https://cinchronicity.github.io/Pokedex-App/" target="_blank" class="quick-link">
+              🔗 Live Demo
+            </a>
+            <a href="https://github.com/cinchronicity/Pokedex-App" target="_blank" class="quick-link">
+              💻 GitHub Repo
+            </a>
+          </div>
+        </div>
+
+        <!-- Key Features -->
+        <div class="sidebar-section">
+          <h3>✨ Key Features</h3>
+          <div class="features-grid">
+            <div class="feature-item">
+              <span>Live Pokémon data from PokéAPI</span>
+            </div>
+            <div class="feature-item">
+              <span>Interactive modal pop-ups</span>
+            </div>
+            <div class="feature-item">
+              <span>Responsive design</span>
+            </div>
+            <div class="feature-item">
+              <span>Accessible interface</span>
+            </div>
+            <div class="feature-item">
+              <span>Clean, validated code</span>
+            </div>
+          </div>
+        </div>
+      </aside>
+
+      <!-- Main Content -->
+      <div class="project-content">
+        <!-- Overview -->
+        <section class="project-overview">
+          <h2>Project Overview</h2>
+          <p>
+            The Pokédex App is a JavaScript-based web application that allows users to browse and learn about Pokémon
+            from
+            the external PokéAPI. Built with HTML, CSS, and vanilla JavaScript, it demonstrates core front-end
+            development
+            skills — from data fetching to DOM manipulation — while maintaining a clean, responsive interface.
+          </p>
+        </section>
+
+        <!-- Project Goal -->
+        <section class="project-goal">
+          <h2>Goal / Purpose</h2>
+          <p>
+            The goal of this project was to practice foundational JavaScript programming, including asynchronous data
+            handling and event-driven UI updates, while building a fully functional and visually appealing web
+            application
+            connected to an external API.
+          </p>
+        </section>
+
+        <!-- Challenges & Solutions -->
+        <section class="project-challenges">
+          <h2>Challenges & Solutions</h2>
+          <p>
+            <span class="challenge">
+              <span class="challenge-text">Challenge:</span> Handling asynchronous data and displaying it efficiently
+              while maintaining good user experience.
+            </span>
+          </p>
+          <p>
+            <span class="solution">
+              <span class="solution-text">Solution:</span> Implemented promise-based logic with async/await and added
+              loading indicators to improve user experience during data fetch operations.
+            </span>
+          </p>
+        </section>
+
+        <!-- Lessons Learned -->
+        <section class="project-lessons">
+          <h2>Lessons Learned</h2>
+          <p>
+            Through this project, I strengthened my understanding of JavaScript fundamentals, API integration, DOM
+            manipulation, and the importance of writing modular, clean code. It also taught me how to balance
+            functionality
+            and design for a more polished final product.
+          </p>
+        </section>
+
+        <!-- Future Improvements -->
+        <section class="project-future">
+          <h2>Future Improvements</h2>
+          <ul>
+            <li>Add a search bar and filtering options by type or ability.</li>
+            <li>Implement dark mode for improved accessibility and visual appeal.</li>
+            <li>Expand API integration to include Pokémon evolutions or abilities.</li>
+          </ul>
+        </section>
+      </div>
+    </div>
+
+    <!-- Project Navigation -->
+    <nav class="project-navigation">
+      <a href="sync-app.html" class="nav-button">
+        ← Previous: Sync App
+      </a>
+      <a href="projects.html" class="nav-button back-to-projects">
+        ↑ All Projects
+      </a>
+      <a href="flixhive-api.html" class="nav-button">
+        Next: FlixHive API →
+      </a>
+    </nav>
+  </main>
+
+  <footer class="page__footer">
+    <p>Connect with me!</p>
+    <div class="social__media">
+      <a href="https://github.com/cinchronicity" target="_blank" aria-label="Visit my GitHub profile">
+        <img src="img/github-logo.svg" alt="Github">
+      </a>
+      <a href="https://www.linkedin.com/in/cindylinares" target="_blank" aria-label="Visit my LinkedIn profile">
+        <img src="img/linkedin-logo.svg" alt="LinkedIn">
+      </a>
+    </div>
+  </footer>
+
+  <script src="js/tota11y.min.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Meet App Project - Cindy's Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap" rel="stylesheet">
+  <link rel="stylesheet" type="text/css"
+    href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+  <link rel="stylesheet" type="text/css" href="css/styles.css">
+  <link rel="Icon" href="img/c-favicon.png">
+</head>
+
+<body>
+  <header class="page-header">
+    <img src="img/c-l-triangle-logo.png" class="page-header__item" alt="Cindy Linares name logo">
+    <nav class="navigation__page-header-item">
+      <ul role="menubar" class="navigation-list">
+        <li role="presentation">
+          <a href="index.html" aria-label="home page" role="menuitem" class="navigation-list__item">Home</a>
+        </li>
+        <li role="presentation">
+          <a href="about.html" aria-label="about cindy" class="navigation-list__item" role="menuitem">About</a>
+        </li>
+        <li role="presentation">
+          <a href="projects.html" aria-label="cindy's work" role="menuitem" class="navigation-list__item">Work</a>
+        </li>
+        <li role="presentation">
+          <a href="contact.html" aria-label="contact cindy" role="menuitem" class="navigation-list__item">Contact</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h1 class="project-title">Meet App Project</h1>
+
+    <!-- Hero Section -->
+    <section class="project-hero">
+      <p class="tagline">A serverless Progressive Web App (PWA) built with React using test-driven development to help
+        users find and discover local events.</p>
+      <img src="img/meet-app-overview.png" alt="Screenshot of Meet App interface" class="project-hero-img">
+    </section>
+
+    <!-- Main Layout: Sidebar + Content -->
+    <div class="project-layout">
+      <!-- Sidebar -->
+      <aside class="project-sidebar">
+        <!-- Tech Stack - Emphasized -->
+        <div class="sidebar-section tech-stack-section">
+          <h3>🛠️ Tech Stack</h3>
+          <div class="tech-tags">
+            <span class="tech-tag">React</span>
+            <span class="tech-tag">JavaScript</span>
+            <span class="tech-tag">PWA</span>
+            <span class="tech-tag">TDD</span>
+            <span class="tech-tag">Jest</span>
+            <span class="tech-tag">Cucumber</span>
+            <span class="tech-tag">Google Calendar API</span>
+            <span class="tech-tag">AWS Lambda</span>
+          </div>
+        </div>
+
+        <!-- Quick Links -->
+        <div class="sidebar-section">
+          <h3>🔗 Quick Links</h3>
+          <div class="quick-links">
+            <a href="https://github.com/cinchronicity/Meet" target="_blank" class="quick-link">
+              💻 GitHub Repo
+            </a>
+          </div>
+        </div>
+
+        <!-- Key Features -->
+        <div class="sidebar-section">
+          <h3>✨ Key Features</h3>
+          <div class="features-grid">
+            <div class="feature-item">
+              <span>Event search and filtering</span>
+            </div>
+            <div class="feature-item">
+              <span>Location-based discovery</span>
+            </div>
+            <div class="feature-item">
+              <span>Offline functionality</span>
+            </div>
+            <div class="feature-item">
+              <span>Data visualization charts</span>
+            </div>
+            <div class="feature-item">
+              <span>Responsive PWA design</span>
+            </div>
+          </div>
+        </div>
+      </aside>
+
+      <!-- Main Content -->
+      <div class="project-content">
+        <!-- Overview -->
+        <section class="project-overview">
+          <h2>Project Overview</h2>
+          <p>
+            The Meet App is a serverless Progressive Web Application built with React using a test-driven development
+            approach.
+            It integrates with the Google Calendar API to provide users with a seamless way to discover and manage local
+            events.
+            The app demonstrates advanced React concepts, serverless architecture, and modern web development best
+            practices.
+          </p>
+        </section>
+
+        <!-- Project Goal -->
+        <section class="project-goal">
+          <h2>Goal / Purpose</h2>
+          <p>
+            The primary goal was to build a comprehensive PWA using test-driven development while learning serverless
+            architecture and advanced React patterns. The project emphasized creating a robust, scalable application
+            with proper testing coverage and offline capabilities.
+          </p>
+        </section>
+
+        <!-- Challenges & Solutions -->
+        <section class="project-challenges">
+          <h2>Challenges & Solutions</h2>
+          <p>
+            <span class="challenge">
+              <span class="challenge-text">Challenge:</span> Implementing serverless architecture and managing complex
+              API integrations with proper error handling.
+            </span>
+          </p>
+          <p>
+            <span class="solution">
+              <span class="solution-text">Solution:</span> Built AWS Lambda functions for authentication and API calls,
+              implemented comprehensive error handling and fallback mechanisms.
+            </span>
+          </p>
+        </section>
+
+        <!-- Lessons Learned -->
+        <section class="project-lessons">
+          <h2>Lessons Learned</h2>
+          <p>
+            This project deepened my understanding of test-driven development, serverless architecture, and Progressive
+            Web App
+            principles. I gained valuable experience with AWS services, advanced React patterns, and creating
+            applications that
+            work seamlessly both online and offline.
+          </p>
+        </section>
+
+        <!-- Future Improvements -->
+        <section class="project-future">
+          <h2>Future Improvements</h2>
+          <ul>
+            <li>Add social sharing features for events</li>
+            <li>Implement user authentication and personalized recommendations</li>
+            <li>Expand data visualization with more chart types</li>
+            <li>Add event creation and management capabilities</li>
+          </ul>
+        </section>
+      </div>
+    </div>
+
+    <!-- Project Navigation -->
+    <nav class="project-navigation">
+      <a href="flixhive-angular.html" class="nav-button">
+        ← Previous: FlixHive Angular
+      </a>
+      <a href="projects.html" class="nav-button back-to-projects">
+        ↑ All Projects
+      </a>
+      <a href="sync-app.html" class="nav-button">
+        Next: Sync App →
+      </a>
+    </nav>
+  </main>
+
+  <footer class="page__footer">
+    <p>Connect with me!</p>
+    <div class="social__media">
+      <a href="https://github.com/cinchronicity" target="_blank" aria-label="Visit my GitHub profile">
+        <img src="img/github-logo.svg" alt="Github">
+      </a>
+      <a href="https://www.linkedin.com/in/cindylinares" target="_blank" aria-label="Visit my LinkedIn profile">
+        <img src="img/linkedin-logo.svg" alt="LinkedIn">
+      </a>
+    </div>
+  </footer>
+
+  <script src="js/tota11y.min.js"></script>
+</body>
+
+</html>

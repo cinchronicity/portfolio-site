@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FlixHive API Project - Cindy's Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap" rel="stylesheet">
+  <link rel="stylesheet" type="text/css"
+    href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+  <link rel="stylesheet" type="text/css" href="css/styles.css">
+  <link rel="Icon" href="img/c-favicon.png">
+</head>
+
+<body>
+  <header class="page-header">
+    <img src="img/c-l-triangle-logo.png" class="page-header__item" alt="Cindy Linares name logo">
+    <nav class="navigation__page-header-item">
+      <ul role="menubar" class="navigation-list">
+        <li role="presentation">
+          <a href="index.html" aria-label="home page" role="menuitem" class="navigation-list__item">Home</a>
+        </li>
+        <li role="presentation">
+          <a href="about.html" aria-label="about cindy" class="navigation-list__item" role="menuitem">About</a>
+        </li>
+        <li role="presentation">
+          <a href="projects.html" aria-label="cindy's work" role="menuitem" class="navigation-list__item">Work</a>
+        </li>
+        <li role="presentation">
+          <a href="contact.html" aria-label="contact cindy" role="menuitem" class="navigation-list__item">Contact</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h1 class="project-title">FlixHive Movie API Project</h1>
+
+    <!-- Hero Section -->
+    <section class="project-hero">
+      <p class="tagline">A comprehensive REST API built with Node.js and Express that provides movie data, user
+        authentication, and personal favorites management for movie applications.</p>
+      <img src="img/backend-api-imagery.jpg" alt="Backend API development illustration" class="project-hero-img">
+    </section>
+
+    <!-- Main Layout: Sidebar + Content -->
+    <div class="project-layout">
+      <!-- Sidebar -->
+      <aside class="project-sidebar">
+        <!-- Tech Stack - Emphasized -->
+        <div class="sidebar-section tech-stack-section">
+          <h3>🛠️ Tech Stack</h3>
+          <div class="tech-tags">
+            <span class="tech-tag">Node.js</span>
+            <span class="tech-tag">Express</span>
+            <span class="tech-tag">MongoDB</span>
+            <span class="tech-tag">Mongoose</span>
+            <span class="tech-tag">JWT</span>
+            <span class="tech-tag">Passport</span>
+            <span class="tech-tag">bcrypt</span>
+            <span class="tech-tag">Heroku</span>
+          </div>
+        </div>
+
+        <!-- Quick Links -->
+        <div class="sidebar-section">
+          <h3>🔗 Quick Links</h3>
+          <div class="quick-links">
+            <a href="https://github.com/cinchronicity/FlixHive" target="_blank" class="quick-link">
+              💻 GitHub Repo
+            </a>
+          </div>
+        </div>
+
+        <!-- Key Features -->
+        <div class="sidebar-section">
+          <h3>✨ Key Features</h3>
+          <div class="features-grid">
+            <div class="feature-item">
+              <span>Full CRUD operations for movies</span>
+            </div>
+            <div class="feature-item">
+              <span>JWT-based authentication</span>
+            </div>
+            <div class="feature-item">
+              <span>User registration and profiles</span>
+            </div>
+            <div class="feature-item">
+              <span>Favorites management system</span>
+            </div>
+            <div class="feature-item">
+              <span>Data validation and security</span>
+            </div>
+          </div>
+        </div>
+      </aside>
+
+      <!-- Main Content -->
+      <div class="project-content">
+        <!-- Overview -->
+        <section class="project-overview">
+          <h2>Project Overview</h2>
+          <p>
+            The FlixHive API is a robust RESTful web service built with Node.js and Express, providing comprehensive
+            movie data management and user authentication. The API serves as the backend foundation for movie
+            applications,
+            offering secure endpoints for user management, movie information retrieval, and personal favorites
+            functionality.
+          </p>
+        </section>
+
+        <!-- Project Goal -->
+        <section class="project-goal">
+          <h2>Goal / Purpose</h2>
+          <p>
+            The primary objective was to build a complete server-side application demonstrating backend development
+            fundamentals including database design, API architecture, user authentication, and security best practices.
+            This project focused on creating a scalable and secure foundation for movie-related applications.
+          </p>
+        </section>
+
+        <!-- Challenges & Solutions -->
+        <section class="project-challenges">
+          <h2>Challenges & Solutions</h2>
+          <p>
+            <span class="challenge">
+              <span class="challenge-text">Challenge:</span> Implementing secure user authentication and authorization
+              while maintaining API performance and data integrity.
+            </span>
+          </p>
+          <p>
+            <span class="solution">
+              <span class="solution-text">Solution:</span> Integrated Passport.js with JWT tokens for authentication and
+              implemented bcrypt for password hashing, ensuring robust security throughout the application.
+            </span>
+          </p>
+        </section>
+
+        <!-- Lessons Learned -->
+        <section class="project-lessons">
+          <h2>Lessons Learned</h2>
+          <p>
+            This project provided deep insights into backend development, database design with MongoDB, and API security
+            best practices. I gained valuable experience with middleware implementation, error handling, data
+            validation,
+            and deploying applications to cloud platforms like Heroku.
+          </p>
+        </section>
+
+        <!-- Future Improvements -->
+        <section class="project-future">
+          <h2>Future Improvements</h2>
+          <ul>
+            <li>Add comprehensive logging and monitoring systems</li>
+            <li>Implement advanced search and filtering capabilities</li>
+            <li>Add rate limiting and API versioning</li>
+            <li>Expand to include movie reviews and ratings features</li>
+          </ul>
+        </section>
+      </div>
+    </div>
+
+    <!-- Project Navigation -->
+    <nav class="project-navigation">
+      <a href="pokedex.html" class="nav-button">
+        ← Previous: Pokédex
+      </a>
+      <a href="projects.html" class="nav-button back-to-projects">
+        ↑ All Projects
+      </a>
+      <a href="flixhive-react.html" class="nav-button">
+        Next: FlixHive React →
+      </a>
+    </nav>
+  </main>
+
+  <footer class="page__footer">
+    <p>Connect with me!</p>
+    <div class="social__media">
+      <a href="https://github.com/cinchronicity" target="_blank" aria-label="Visit my GitHub profile">
+        <img src="img/github-logo.svg" alt="Github">
+      </a>
+      <a href="https://www.linkedin.com/in/cindylinares" target="_blank" aria-label="Visit my LinkedIn profile">
+        <img src="img/linkedin-logo.svg" alt="LinkedIn">
+      </a>
+    </div>
+  </footer>
+
+  <script src="js/tota11y.min.js"></script>
+</body>
+
+</html>

@@ -8,7 +8,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css"
         href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
-    <link rel="stylesheet" type="text/css" href="css/style.production.css">
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
     <link rel="Icon" href="img/c-favicon.png">
 
 </head>
@@ -43,61 +43,67 @@
         <div class="grid">
             <div class="grid__item">
                 <img src="img/pokedex2.png" class="grid__item-photo" alt="Pokemon Pokedex">
-                <h2> Pokedex</h2>
-                <p> A responsive Pokédex web app built with HTML, CSS, and JavaScript that fetches Pokémon data from an
+                <h2 class="project-title">Pokedex</h2>
+                <p class="project-description">A responsive Pokédex web app built with HTML, CSS, and JavaScript that
+                    fetches Pokémon data from an
                     external API, allowing users to browse and view detailed stats for each Pokémon through an
-                    interactive interface. </p>
-                <a href="https://github.com/cinchronicity/Pokedex-App" target="_blank" class="button__primary"> See
-                    Project on GitHub</a>
+                    interactive interface.</p>
+                <div class="project-buttons">
+                    <a href="pokedex.html" class="project-button project-button--secondary">Learn More</a>
+                </div>
             </div>
             <div class="grid__item">
                 <img src="img/backend-api-imagery.jpg" class="grid__item-photo" alt="FlixHive movie app">
-                <h2> FlixHive movie API </h2>
-                <p> A RESTful API built with Node.js, Express, and MongoDB that powers movie, director, and genre data
-                    while supporting secure user authentication and profile management.
-
-                </p>
-                <a href="https://github.com/cinchronicity/FlixHive" class="button__primary" target="_blank"> See
-                    Project on GitHub</a>
+                <h2 class="project-title">FlixHive movie API</h2>
+                <p class="project-description">A RESTful API built with Node.js, Express, and MongoDB that powers movie,
+                    director, and genre data
+                    while supporting secure user authentication and profile management.</p>
+                <div class="project-buttons">
+                    <a href="flixhive-api.html" class="project-button project-button--secondary">Learn More</a>
+                </div>
             </div>
 
             <div class="grid__item">
                 <img src="img/flixhive-app.png" class="grid__item-photo" alt="FlixHive movie app React version">
-                <h2> FlixHive </h2>
-                <p> A responsive single-page app built with React that interfaces with the FlixHive API. Users can
+                <h2 class="project-title">FlixHive</h2>
+                <p class="project-description">A responsive single-page app built with React that interfaces with the
+                    FlixHive API. Users can
                     browse movies, view detailed info on directors and genres, and manage favorite films through a
-                    modern, intuitive UI.
-                </p>
-                <a href="https://github.com/cinchronicity/FlixHive-client" class="button__primary" target="_blank"> See
-                    project on GitHub</a>
+                    modern, intuitive UI.</p>
+                <div class="project-buttons">
+                    <a href="flixhive-react.html" class="project-button project-button--secondary">Learn More</a>
+                </div>
             </div>
             <div class="grid__item">
                 <img src="img/meet-app-overview.png" class="grid__item-photo" alt="Meet App">
-                <h2> Meet </h2>
-                <p> A serverless, progressive web app built with React that uses the Google Calendar API to display upcoming events by city. Designed with a test-driven development (TDD) approach, the app works offline and includes interactive data visualizations.
-                </p>
-                <a href="https://github.com/cinchronicity/Meet" class="button__primary" target="_blank"> See Project on
-                    GitHub</a>
+                <h2 class="project-title">Meet</h2>
+                <p class="project-description">A serverless, progressive web app built with React that uses the Google
+                    Calendar API to display upcoming events by city. Designed with a test-driven development (TDD)
+                    approach, the app works offline and includes interactive data visualizations.</p>
+                <div class="project-buttons">
+                    <a href="meet-app.html" class="project-button project-button--secondary">Learn More</a>
+                </div>
             </div>
             <div class="grid__item">
                 <img src="img/sync-app.png" class="grid__item-photo" alt="Sync App">
-                <h2> Sync </h2>
-                <p> A cross-platform mobile chat app built with React Native and Expo that lets users send messages,
+                <h2 class="project-title">Sync</h2>
+                <p class="project-description">A cross-platform mobile chat app built with React Native and Expo that
+                    lets users send messages,
                     images, and their location in real time. Designed for accessibility and offline use, it connects to
-                    Firebase and Firestore for data storage and authentication.
-                </p>
-                <a href="https://github.com/cinchronicity/sync" class="button__primary" target="_blank"> See Project on
-                    GitHub</a>
+                    Firebase and Firestore for data storage and authentication.</p>
+                <div class="project-buttons">
+                    <a href="sync-app.html" class="project-button project-button--secondary">Learn More</a>
+                </div>
             </div>
             <div class="grid__item">
-                <img src="img/flixhive-angular.png" class="grid__item-photo" alt="FlixHive movie app Angular version">
-                <h2> FlixHive</h2>
-                <p> A responsive Angular application that connects to the FlixHive API, allowing users to explore
-                    movies, manage favorites, and update profiles through a sleek, single-page interface.
-                </p>
-                <a href="https://github.com/cinchronicity/FlixHive-Angular-client" class="button__primary"
-                    target="_blank"> See Project on
-                    GitHub</a>
+                <img src="img/flixhive-angular2.png" class="grid__item-photo" alt="FlixHive movie app Angular version">
+                <h2 class="project-title">FlixHive Angular</h2>
+                <p class="project-description">A responsive Angular application that connects to the FlixHive API,
+                    allowing users to explore
+                    movies, manage favorites, and update profiles through a sleek, single-page interface.</p>
+                <div class="project-buttons">
+                    <a href="flixhive-angular.html" class="project-button project-button--secondary">Learn More</a>
+                </div>
             </div>
 
 
@@ -109,9 +115,12 @@
     <footer class="page__footer">
         <p> Connect with me!</p>
         <div class="social__media">
-            <img src="img/github-logo.svg" alt="Github">
-            <img src="img/linkedin-logo.svg" alt="LinkedIn">
-            <img src="img/twitter-logo.svg" alt="Twitter">
+            <a href="https://github.com/cinchronicity" target="_blank" aria-label="Visit my GitHub profile">
+                <img src="img/github-logo.svg" alt="Github">
+            </a>
+            <a href="https://www.linkedin.com/in/cindylinares" target="_blank" aria-label="Visit my LinkedIn profile">
+                <img src="img/linkedin-logo.svg" alt="LinkedIn">
+            </a>
         </div>
     </footer>
     <script src="js/tota11y.min.js"></script>

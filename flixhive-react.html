@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FlixHive React Project - Cindy's Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap" rel="stylesheet">
+  <link rel="stylesheet" type="text/css"
+    href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+  <link rel="stylesheet" type="text/css" href="css/styles.css">
+  <link rel="Icon" href="img/c-favicon.png">
+</head>
+
+<body>
+  <header class="page-header">
+    <img src="img/c-l-triangle-logo.png" class="page-header__item" alt="Cindy Linares name logo">
+    <nav class="navigation__page-header-item">
+      <ul role="menubar" class="navigation-list">
+        <li role="presentation">
+          <a href="index.html" aria-label="home page" role="menuitem" class="navigation-list__item">Home</a>
+        </li>
+        <li role="presentation">
+          <a href="about.html" aria-label="about cindy" class="navigation-list__item" role="menuitem">About</a>
+        </li>
+        <li role="presentation">
+          <a href="projects.html" aria-label="cindy's work" role="menuitem" class="navigation-list__item">Work</a>
+        </li>
+        <li role="presentation">
+          <a href="contact.html" aria-label="contact cindy" role="menuitem" class="navigation-list__item">Contact</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h1 class="project-title">FlixHive React Project</h1>
+
+    <!-- Hero Section -->
+    <section class="project-hero">
+      <p class="tagline">A responsive movie application client-side built with React that interfaces with a custom REST
+        API to provide users with movie information and personal favorites management.</p>
+      <img src="img/flixhive-app.png" alt="Screenshot of FlixHive React app interface" class="project-hero-img">
+    </section>
+
+    <!-- Main Layout: Sidebar + Content -->
+    <div class="project-layout">
+      <!-- Sidebar -->
+      <aside class="project-sidebar">
+        <!-- Tech Stack - Emphasized -->
+        <div class="sidebar-section tech-stack-section">
+          <h3>🛠️ Tech Stack</h3>
+          <div class="tech-tags">
+            <span class="tech-tag">React</span>
+            <span class="tech-tag">React Router</span>
+            <span class="tech-tag">Bootstrap</span>
+            <span class="tech-tag">JavaScript</span>
+            <span class="tech-tag">HTML5</span>
+            <span class="tech-tag">CSS3</span>
+            <span class="tech-tag">REST API</span>
+            <span class="tech-tag">Parcel</span>
+          </div>
+        </div>
+
+        <!-- Quick Links -->
+        <div class="sidebar-section">
+          <h3>🔗 Quick Links</h3>
+          <div class="quick-links">
+            <a href="https://github.com/cinchronicity/FlixHive-client" target="_blank" class="quick-link">
+              💻 GitHub Repo
+            </a>
+          </div>
+        </div>
+
+        <!-- Key Features -->
+        <div class="sidebar-section">
+          <h3>✨ Key Features</h3>
+          <div class="features-grid">
+            <div class="feature-item">
+              <span>Movie browsing and search</span>
+            </div>
+            <div class="feature-item">
+              <span>User authentication system</span>
+            </div>
+            <div class="feature-item">
+              <span>Personal favorites management</span>
+            </div>
+            <div class="feature-item">
+              <span>Director and genre information</span>
+            </div>
+            <div class="feature-item">
+              <span>Responsive Bootstrap design</span>
+            </div>
+          </div>
+        </div>
+      </aside>
+
+      <!-- Main Content -->
+      <div class="project-content">
+        <!-- Overview -->
+        <section class="project-overview">
+          <h2>Project Overview</h2>
+          <p>
+            FlixHive React is a client-side application built with React that interfaces with a custom REST API to
+            deliver
+            a comprehensive movie browsing experience. The application demonstrates modern React development practices,
+            component-based architecture, and responsive design principles using Bootstrap for styling.
+          </p>
+        </section>
+
+        <!-- Project Goal -->
+        <section class="project-goal">
+          <h2>Goal / Purpose</h2>
+          <p>
+            The goal was to create a complete client-side application using React and modern front-end development
+            practices.
+            This project focused on learning React Router for navigation, state management, API integration, and
+            creating
+            a polished user interface for movie enthusiasts.
+          </p>
+        </section>
+
+        <!-- Challenges & Solutions -->
+        <section class="project-challenges">
+          <h2>Challenges & Solutions</h2>
+          <p>
+            <span class="challenge">
+              <span class="challenge-text">Challenge:</span> Managing complex application state and implementing smooth
+              routing between different views and components.
+            </span>
+          </p>
+          <p>
+            <span class="solution">
+              <span class="solution-text">Solution:</span> Utilized React Router for seamless navigation and implemented
+              proper state management patterns with React hooks for efficient data flow.
+            </span>
+          </p>
+        </section>
+
+        <!-- Lessons Learned -->
+        <section class="project-lessons">
+          <h2>Lessons Learned</h2>
+          <p>
+            This project enhanced my understanding of React ecosystem, component lifecycle, and modern JavaScript
+            development.
+            I gained experience with React Router, Bootstrap integration, and creating maintainable, scalable front-end
+            applications with proper API integration patterns.
+          </p>
+        </section>
+
+        <!-- Future Improvements -->
+        <section class="project-future">
+          <h2>Future Improvements</h2>
+          <ul>
+            <li>Add advanced filtering and sorting options</li>
+            <li>Implement movie recommendations based on user preferences</li>
+            <li>Add social features like reviews and ratings</li>
+            <li>Enhance search functionality with auto-suggestions</li>
+          </ul>
+        </section>
+      </div>
+    </div>
+
+    <!-- Project Navigation -->
+    <nav class="project-navigation">
+      <a href="flixhive-api.html" class="nav-button">
+        ← Previous: FlixHive API
+      </a>
+      <a href="projects.html" class="nav-button back-to-projects">
+        ↑ All Projects
+      </a>
+      <a href="flixhive-angular.html" class="nav-button">
+        Next: FlixHive Angular →
+      </a>
+    </nav>
+  </main>
+
+  <footer class="page__footer">
+    <p>Connect with me!</p>
+    <div class="social__media">
+      <a href="https://github.com/cinchronicity" target="_blank" aria-label="Visit my GitHub profile">
+        <img src="img/github-logo.svg" alt="Github">
+      </a>
+      <a href="https://www.linkedin.com/in/cindylinares" target="_blank" aria-label="Visit my LinkedIn profile">
+        <img src="img/linkedin-logo.svg" alt="LinkedIn">
+      </a>
+    </div>
+  </footer>
+
+  <script src="js/tota11y.min.js"></script>
+</body>
+
+</html>

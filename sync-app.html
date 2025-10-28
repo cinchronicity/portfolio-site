@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sync App Project - Cindy's Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap" rel="stylesheet">
+  <link rel="stylesheet" type="text/css"
+    href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+  <link rel="stylesheet" type="text/css" href="css/styles.css">
+  <link rel="Icon" href="img/c-favicon.png">
+</head>
+
+<body>
+  <header class="page-header">
+    <img src="img/c-l-triangle-logo.png" class="page-header__item" alt="Cindy Linares name logo">
+    <nav class="navigation__page-header-item">
+      <ul role="menubar" class="navigation-list">
+        <li role="presentation">
+          <a href="index.html" aria-label="home page" role="menuitem" class="navigation-list__item">Home</a>
+        </li>
+        <li role="presentation">
+          <a href="about.html" aria-label="about cindy" class="navigation-list__item" role="menuitem">About</a>
+        </li>
+        <li role="presentation">
+          <a href="projects.html" aria-label="cindy's work" role="menuitem" class="navigation-list__item">Work</a>
+        </li>
+        <li role="presentation">
+          <a href="contact.html" aria-label="contact cindy" role="menuitem" class="navigation-list__item">Contact</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h1 class="project-title">Sync App Project</h1>
+
+    <!-- Hero Section -->
+    <section class="project-hero">
+      <p class="tagline">A React Native cross-platform mobile application for real-time chat with offline storage,
+        camera integration, and location sharing capabilities.</p>
+      <img src="img/sync-app.png" alt="Screenshot of Sync App mobile interface" class="project-hero-img">
+    </section>
+
+    <!-- Main Layout: Sidebar + Content -->
+    <div class="project-layout">
+      <!-- Sidebar -->
+      <aside class="project-sidebar">
+        <!-- Tech Stack - Emphasized -->
+        <div class="sidebar-section tech-stack-section">
+          <h3>🛠️ Tech Stack</h3>
+          <div class="tech-tags">
+            <span class="tech-tag">React Native</span>
+            <span class="tech-tag">Expo</span>
+            <span class="tech-tag">Firebase</span>
+            <span class="tech-tag">Firestore</span>
+            <span class="tech-tag">Firebase Auth</span>
+            <span class="tech-tag">AsyncStorage</span>
+            <span class="tech-tag">Expo Camera</span>
+            <span class="tech-tag">MapView</span>
+          </div>
+        </div>
+
+        <!-- Quick Links -->
+        <div class="sidebar-section">
+          <h3>🔗 Quick Links</h3>
+          <div class="quick-links">
+            <a href="https://github.com/cinchronicity/sync" target="_blank" class="quick-link">
+              💻 GitHub Repo
+            </a>
+          </div>
+        </div>
+
+        <!-- Key Features -->
+        <div class="sidebar-section">
+          <h3>✨ Key Features</h3>
+          <div class="features-grid">
+            <div class="feature-item">
+              <span>Real-time messaging</span>
+            </div>
+            <div class="feature-item">
+              <span>Offline message storage</span>
+            </div>
+            <div class="feature-item">
+              <span>Image sharing from camera/gallery</span>
+            </div>
+            <div class="feature-item">
+              <span>Location sharing with maps</span>
+            </div>
+            <div class="feature-item">
+              <span>Anonymous authentication</span>
+            </div>
+          </div>
+        </div>
+      </aside>
+
+      <!-- Main Content -->
+      <div class="project-content">
+        <!-- Overview -->
+        <section class="project-overview">
+          <h2>Project Overview</h2>
+          <p>
+            Sync App is a cross-platform mobile chat application built with React Native and Expo, featuring real-time
+            messaging powered by Firebase Firestore. The app demonstrates mobile development best practices including
+            offline functionality, device feature integration, and cloud-based real-time data synchronization.
+          </p>
+        </section>
+
+        <!-- Project Goal -->
+        <section class="project-goal">
+          <h2>Goal / Purpose</h2>
+          <p>
+            The goal was to create a fully functional mobile chat application that works seamlessly across both iOS and
+            Android platforms. This project focused on learning React Native development, Firebase integration, and
+            implementing essential mobile features like camera access, location services, and offline storage.
+          </p>
+        </section>
+
+        <!-- Challenges & Solutions -->
+        <section class="project-challenges">
+          <h2>Challenges & Solutions</h2>
+          <p>
+            <span class="challenge">
+              <span class="challenge-text">Challenge:</span> Implementing reliable offline functionality while
+              maintaining real-time synchronization when the device comes back online.
+            </span>
+          </p>
+          <p>
+            <span class="solution">
+              <span class="solution-text">Solution:</span> Used AsyncStorage for local message caching and implemented
+              Firebase Firestore's offline persistence to ensure seamless data synchronization across network states.
+            </span>
+          </p>
+        </section>
+
+        <!-- Lessons Learned -->
+        <section class="project-lessons">
+          <h2>Lessons Learned</h2>
+          <p>
+            This project provided comprehensive experience in mobile development, teaching me React Native concepts,
+            cross-platform development considerations, and mobile-specific UX patterns. I gained valuable knowledge in
+            Firebase services, device API integration, and creating apps that work reliably in various network
+            conditions.
+          </p>
+        </section>
+
+        <!-- Future Improvements -->
+        <section class="project-future">
+          <h2>Future Improvements</h2>
+          <ul>
+            <li>Add user profiles and contact management</li>
+            <li>Implement push notifications for new messages</li>
+            <li>Add voice message recording and playback</li>
+            <li>Implement group chat functionality</li>
+            <li>Add message encryption for enhanced security</li>
+          </ul>
+        </section>
+      </div>
+    </div>
+
+    <!-- Project Navigation -->
+    <nav class="project-navigation">
+      <a href="meet-app.html" class="nav-button">
+        ← Previous: Meet App
+      </a>
+      <a href="projects.html" class="nav-button back-to-projects">
+        ↑ All Projects
+      </a>
+      <a href="pokedex.html" class="nav-button">
+        Next: Pokédex →
+      </a>
+    </nav>
+  </main>
+
+  <footer class="page__footer">
+    <p>Connect with me!</p>
+    <div class="social__media">
+      <a href="https://github.com/cinchronicity" target="_blank" aria-label="Visit my GitHub profile">
+        <img src="img/github-logo.svg" alt="Github">
+      </a>
+      <a href="https://www.linkedin.com/in/cindylinares" target="_blank" aria-label="Visit my LinkedIn profile">
+        <img src="img/linkedin-logo.svg" alt="LinkedIn">
+      </a>
+    </div>
+  </footer>
+
+  <script src="js/tota11y.min.js"></script>
+</body>
+
+</html>

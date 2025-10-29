@@ -59,6 +59,7 @@
             <span class="tech-tag">Passport</span>
             <span class="tech-tag">bcrypt</span>
             <span class="tech-tag">Heroku</span>
+            <span class="tech-tag">CORS</span>
           </div>
         </div>
 
@@ -69,7 +70,11 @@
             <a href="https://github.com/cinchronicity/FlixHive" target="_blank" class="quick-link">
               💻 GitHub Repo
             </a>
+            <a href=" https://flixhive-cf7fbbd939d2.herokuapp.com" target="_blank" class="quick-link">
+              🌐 Live API
+            </a>
           </div>
+
         </div>
 
         <!-- Key Features -->
@@ -77,10 +82,16 @@
           <h3>✨ Key Features</h3>
           <div class="features-grid">
             <div class="feature-item">
-              <span>Full CRUD operations for movies</span>
+              <span>RESTful API built with Node.js and Express</span>
+            </div>
+            <div class="feature-item">
+              <span>Full CRUD operations for user & movie details</span>
             </div>
             <div class="feature-item">
               <span>JWT-based authentication</span>
+            </div>
+            <div class="feature-item">
+              <span>Endpoints tested in Postman</span>
             </div>
             <div class="feature-item">
               <span>User registration and profiles</span>
@@ -90,6 +101,9 @@
             </div>
             <div class="feature-item">
               <span>Data validation and security</span>
+            </div>
+            <div class="feature-item">
+              <span>Deployed on Heroku</span>
             </div>
           </div>
         </div>
@@ -101,11 +115,12 @@
         <section class="project-overview">
           <h2>Project Overview</h2>
           <p>
-            The FlixHive API is a robust RESTful web service built with Node.js and Express, providing comprehensive
-            movie data management and user authentication. The API serves as the backend foundation for movie
-            applications,
-            offering secure endpoints for user management, movie information retrieval, and personal favorites
-            functionality.
+            The FlixHive API is the server-side component of a full-stack movie web application built with Node.js,
+            Express, and MongoDB. It provides secure endpoints that deliver movie, director, actor, and genre data in
+            JSON
+            format, while allowing users to register, update their profiles, and manage their list of favorite movies.
+            This RESTful API serves as the backend foundation for the FlixHive client applications developed in later
+            projects.
           </p>
         </section>
 
@@ -113,9 +128,10 @@
         <section class="project-goal">
           <h2>Goal / Purpose</h2>
           <p>
-            The primary objective was to build a complete server-side application demonstrating backend development
-            fundamentals including database design, API architecture, user authentication, and security best practices.
-            This project focused on creating a scalable and secure foundation for movie-related applications.
+            The goal of this project was to build a fully functional REST API that demonstrates backend development
+            skills, database design, and user authentication using the MERN stack. It emphasizes clean architecture,
+            secure data handling, and the ability to connect a non-relational database to client-side applications for
+            dynamic data interaction.
           </p>
         </section>
 
@@ -134,17 +150,33 @@
               implemented bcrypt for password hashing, ensuring robust security throughout the application.
             </span>
           </p>
+          <p>
+            <span class="challenge">
+              <span class="challenge-text">Challenge:</span> Securely connecting to MongoDB Atlas without exposing
+              credentials in the codebase.
+
+
+            </span>
+          </p>
+          <p>
+            <span class="solution">
+              <span class="solution-text">Solution:</span> Implemented environment variables using
+              "process.env.CONNECTION_URI" to store database credentials securely, ensuring seamless deployment across
+              different environments.
+            </span>
+          </p>
         </section>
 
         <!-- Lessons Learned -->
         <section class="project-lessons">
           <h2>Lessons Learned</h2>
-          <p>
-            This project provided deep insights into backend development, database design with MongoDB, and API security
-            best practices. I gained valuable experience with middleware implementation, error handling, data
-            validation,
-            and deploying applications to cloud platforms like Heroku.
-          </p>
+          <ul>
+            <li>Strengthened understanding of REST architecture and routing in Express</li>
+            <li>Gained hands-on experience with MongoDB and Mongoose for data modeling</li>
+            <li>Learned how to implement secure user authentication and authorization</li>
+            <li>Improved ability to structure backend logic for scalability and maintainability</li>
+            <li>Practiced deploying applications to Heroku and using environment variables for security</li>
+          </ul>
         </section>
 
         <!-- Future Improvements -->
@@ -155,6 +187,7 @@
             <li>Implement advanced search and filtering capabilities</li>
             <li>Add rate limiting and API versioning</li>
             <li>Expand to include movie reviews and ratings features</li>
+            <li>Add "To Watch" lists in addition to favorites</li>
           </ul>
         </section>
       </div>

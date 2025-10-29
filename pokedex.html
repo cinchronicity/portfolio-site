@@ -34,7 +34,7 @@
   </header>
 
   <main>
-    <h1 class="project-title">Pokédex Project</h1>
+    <h1 class="project-title">Pokédex</h1>
 
     <!-- Hero Section -->
     <section class="project-hero">
@@ -59,6 +59,11 @@
             <span class="tech-tag">PokéAPI</span>
             <span class="tech-tag">ESLint</span>
             <span class="tech-tag">Prettier</span>
+            <span class="tech-tag">JQuery</span>
+            <span class="tech-tag">Bootstrap</span>
+            <span class="tech-tag">Polyfills</span>
+
+
           </div>
         </div>
 
@@ -92,10 +97,13 @@
               <span>Accessible interface</span>
             </div>
             <div class="feature-item">
-              <span>Clean, validated code</span>
+              <span>Clean, validated code using ESLint</span>
+
+            </div>
+            <div class="feature-item">
+              <span>Dynamic DOM manipulation using jQuery</span>
             </div>
           </div>
-        </div>
       </aside>
 
       <!-- Main Content -->
@@ -104,11 +112,10 @@
         <section class="project-overview">
           <h2>Project Overview</h2>
           <p>
-            The Pokédex App is a JavaScript-based web application that allows users to browse and learn about Pokémon
-            from
-            the external PokéAPI. Built with HTML, CSS, and vanilla JavaScript, it demonstrates core front-end
-            development
-            skills — from data fetching to DOM manipulation — while maintaining a clean, responsive interface.
+            The Pokédex App is a responsive JavaScript web application that dynamically loads and displays data from the
+            external PokéAPI. Users can browse a list of Pokémon and view detailed information on demand through an
+            intuitive, interactive interface. Built with HTML, CSS, and vanilla JavaScript, the project showcases
+            front-end fundamentals, API integration, and clean code architecture.
           </p>
         </section>
 
@@ -116,10 +123,9 @@
         <section class="project-goal">
           <h2>Goal / Purpose</h2>
           <p>
-            The goal of this project was to practice foundational JavaScript programming, including asynchronous data
-            handling and event-driven UI updates, while building a fully functional and visually appealing web
-            application
-            connected to an external API.
+            This project was designed to strengthen core JavaScript skills by building a fully functional web app from
+            scratch. It focuses on using asynchronous programming to fetch external data, manipulating the DOM
+            dynamically, and maintaining clean, accessible design principles while adhering to best coding practices.
           </p>
         </section>
 
@@ -137,18 +143,37 @@
               <span class="solution-text">Solution:</span> Implemented promise-based logic with async/await and added
               loading indicators to improve user experience during data fetch operations.
             </span>
+            <span class="challenge">
+              <span class="challenge-text">Challenge:</span> Managing JavaScript code structure in a scalable way
+            </span>
+          </p>
+          <p>
+            <span class="solution">
+              <span class="solution-text">Solution:</span> Implemented the Module Pattern using IIFE (Immediately
+              Invoked Function Expression) to create a clean, encapsulated pokemonRepository module
+            </span>
+                        <span class="challenge">
+              <span class="challenge-text">Challenge:</span> Providing intuitive navigation and search functionality
+            </span>
+          </p>
+          <p>
+            <span class="solution">
+              <span class="solution-text">Solution:</span> Integrated Bootstrap modal components for detailed views and implemented real-time search filtering with jQuery
+
+            </span>
           </p>
         </section>
 
         <!-- Lessons Learned -->
         <section class="project-lessons">
           <h2>Lessons Learned</h2>
-          <p>
-            Through this project, I strengthened my understanding of JavaScript fundamentals, API integration, DOM
-            manipulation, and the importance of writing modular, clean code. It also taught me how to balance
-            functionality
-            and design for a more polished final product.
-          </p>
+          <ul>
+            <li>Strengthened understanding of JavaScript fundamentals, including IIFEs, arrays, loops, and asynchronous
+              operations</li>
+            <li>Gained experience structuring modular code and managing app state</li>
+            <li>Improved front-end design and accessibility awareness</li>
+            <li>Learned how to integrate third-party APIs and debug efficiently across browsers</li>
+          </ul>
         </section>
 
         <!-- Future Improvements -->

@@ -8,7 +8,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css"
         href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
-    <link rel="stylesheet" type="text/css" href="css/style.production.css">
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
     <link rel="Icon" href="img/c-favicon.png">
 </head>
 
@@ -38,92 +38,68 @@
             </ul>
         </nav>
     </header>
+
     <main>
-        <div class="background">
-            <div class="container">
-                <div class="screen">
-                    <div class="screen-header">
-                        <div class="screen-header-left">
-                            <div class="screen-header-button close"></div>
-                            <div class="screen-header-button maximize"></div>
-                            <div class="screen-header-button minimize"></div>
-                        </div>
-                        <div class="screen-header-right">
-                            <div class="screen-header-ellipsis"></div>
-                            <div class="screen-header-ellipsis"></div>
-                            <div class="screen-header-ellipsis"></div>
+        <h1 class="project-title">Contact Me</h1>
+
+        <!-- Contact Layout: Similar to project pages -->
+        <div class="contact-container">
+            <div class="contact-layout">
+                <!-- Contact Info Section -->
+                <section class="contact-info-section">
+                    <h2>Contact Information</h2>
+                    <div class="contact-info">
+                        <p class="contact-item">
+                            <span class="contact-label">📧 Email:</span><br>
+                            <a href="mailto:cindyblinares@gmail.com" class="contact-link">cindyblinares@gmail.com</a>
+                        </p>
+
+                        <p class="contact-item">
+                            <span class="contact-label">💼 LinkedIn:</span><br>
+                            <a href="https://www.linkedin.com/in/cindylinares" target="_blank"
+                                class="contact-link">linkedin.com/in/cindylinares</a>
+                        </p>
+
+                        <p class="contact-item">
+                            <span class="contact-label">🔗 GitHub:</span><br>
+                            <a href="https://github.com/cinchronicity" target="_blank"
+                                class="contact-link">github.com/cinchronicity</a>
+                        </p>
+
+                        <p class="contact-item">
+                            <span class="contact-label">📍 Location:</span><br>
+                            <span class="contact-text">Kenmore, WA</span>
+                        </p>
+                    </div>
+                </section>
+
+                <!-- Message Section -->
+                <section class="contact-message-section">
+                    <h2>Ready to collaborate?</h2>
+                    <p>I'm actively seeking new opportunities in web development. Whether you're looking for a dedicated
+                        developer to join your team or want to discuss a project, I'd love to hear from you!</p>
+
+                    <div class="contact-cta">
+                        <p><strong>Preferred contact methods:</strong></p>
+                        <div class="cta-buttons">
+                            <a href="mailto:cindyblinares@gmail.com" class="contact-button primary">
+                                📧 Send Email
+                            </a>
+                            <a href="https://www.linkedin.com/in/cindylinares" target="_blank"
+                                class="contact-button secondary">
+                                💼 LinkedIn Message
+                            </a>
                         </div>
                     </div>
-                    <div class="screen-body">
-                        <div class="screen-body-item left">
-                            <div class="app-title">
-                                <span>CONTACT</span>
-                                <span>ME</span>
-                            </div>
-                            <div class="app-contact">
-                                <br>Kenmore, WA
-                                <br> +1 (111)-222-3333
-                                <br>
-                                <a class="app-contact" href="mailto:cindyblinares@gmail.com"> cindyblinares@gmail.com
-                                </a>
-                            </div>
-                        </div>
-                        <div class="screen-body-item">
-                            <div class="app-form">
-                                <div class="app-form-group">
-                                    <input class="app-form-control" placeholder="NAME">
-                                </div>
-                                <div class="app-form-group">
-                                    <input class="app-form-control" placeholder="EMAIL">
-                                </div>
-                                <div class="app-form-group">
-                                    <input class="app-form-control" placeholder="CONTACT NO">
-                                </div>
-                                <div class="app-form-group message">
-                                    <input class="app-form-control" placeholder="MESSAGE">
-                                </div>
-                                <div class="app-form-group buttons">
-                                    <button class="app-form-button">CANCEL</button>
-                                    <button class="app-form-button">SEND</button>
-                                </div>
-                            </div>
-                        </div>
+
+                    <div class="availability">
+                        <p><em>Available for full-time positions and freelance projects</em></p>
                     </div>
-                </div>
-
-
+                </section>
             </div>
         </div>
     </main>
 
-
-    <!-- old contact form <div class="profile">
-            <h1> Contact </h1>
-            <div>
-                <form action="#" method="post" id="contact-form">
-                    <label class="standard-label" for="contact-email">E-mail: </label>
-                    <input type="email" id="contact-email" required>
-
-                    <label class="standard-label" for="contact-telephone">Telephone: </label>
-                    <input type="tel" pattern="\d{3}[\-]\d{3}[\-]\d{4}" id="contact-telephone">
-
-                    <label class="standard-label" for="contact-message">Message: </label>
-                    <textarea maxlength="240" id="contact-message" required></textarea>
-                    
-                    the id in input and for attribute in label lets users click on email and the cursor goes into that text box- for accessibility
-
-                    <input type="submit" value="Send message">
-                </form>
-
-                <p>
-                    Kenmore, WA 98028
-                </p>
-                <a href="tel:+1(123)-456-7891"> Phone: +1(123)-456-7891 </a>
-                <br>  Line break so email and phone not on same line 
-                <a href="mailto:cindyblinares@gmail.com"> cindyblinares@gmail.com </a>
-            </div>
-            <a href="https://github.com/cinchronicity" target="_blank">Check out some of my code</a>
-        </div> -->
     <footer class="page__footer">
         <p> Connect with me!</p>
         <div class="social__media">

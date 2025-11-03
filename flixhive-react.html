@@ -34,7 +34,7 @@
   </header>
 
   <main>
-    <h1 class="project-title">FlixHive React Project</h1>
+    <h1 class="project-title">FlixHive - React </h1>
 
     <!-- Hero Section -->
     <section class="project-hero">
@@ -53,12 +53,16 @@
           <div class="tech-tags">
             <span class="tech-tag">React</span>
             <span class="tech-tag">React Router</span>
+            <span class="tech-tag">React Bootstrap</span>
             <span class="tech-tag">Bootstrap</span>
             <span class="tech-tag">JavaScript</span>
             <span class="tech-tag">HTML5</span>
             <span class="tech-tag">CSS3</span>
+            <span class="tech-tag">SCSS/SASS</span>
             <span class="tech-tag">REST API</span>
             <span class="tech-tag">Parcel</span>
+            <span class="tech-tag">Axios</span>
+            <span class="tech-tag">Netlify</span>
           </div>
         </div>
 
@@ -69,6 +73,9 @@
             <a href="https://github.com/cinchronicity/FlixHive-client" target="_blank" class="quick-link">
               💻 GitHub Repo
             </a>
+            <a href="https://flixhive-react.netlify.app/" target="_blank" class="quick-link">
+              🌐 Live App
+            </a>
           </div>
         </div>
 
@@ -77,19 +84,22 @@
           <h3>✨ Key Features</h3>
           <div class="features-grid">
             <div class="feature-item">
-              <span>Movie browsing and search</span>
+              <span>Dynamic movie browsing and search</span>
             </div>
             <div class="feature-item">
-              <span>User authentication system</span>
+              <span>User authentication and profile management</span>
             </div>
             <div class="feature-item">
               <span>Personal favorites management</span>
             </div>
             <div class="feature-item">
-              <span>Director and genre information</span>
+              <span>Similar Movies Recommendations</span>
             </div>
             <div class="feature-item">
-              <span>Responsive Bootstrap design</span>
+              <span>Detailed movie, director, actor, and genre information</span>
+            </div>
+            <div class="feature-item">
+              <span>Responsive single-page design</span>
             </div>
           </div>
         </div>
@@ -101,10 +111,11 @@
         <section class="project-overview">
           <h2>Project Overview</h2>
           <p>
-            FlixHive React is a client-side application built with React that interfaces with a custom REST API to
-            deliver
-            a comprehensive movie browsing experience. The application demonstrates modern React development practices,
-            component-based architecture, and responsive design principles using Bootstrap for styling.
+            The FlixHive app is the client-side interface for a full-stack movie application built with React,
+            connecting to the FlixHive API. It provides users with a responsive, single-page experience to explore
+            movies, view detailed information, and manage their personal profile and favorite movie list. The app
+            emphasizes modern front-end principles like component-based architecture, state management, and routing for
+            seamless navigation.
           </p>
         </section>
 
@@ -112,11 +123,9 @@
         <section class="project-goal">
           <h2>Goal / Purpose</h2>
           <p>
-            The goal was to create a complete client-side application using React and modern front-end development
-            practices.
-            This project focused on learning React Router for navigation, state management, API integration, and
-            creating
-            a polished user interface for movie enthusiasts.
+            The goal of this project was to build the client-side of a full-stack application using the MERN (MongoDB,
+            Express, React, Node.js) stack. It demonstrates proficiency in building dynamic, data-driven user interfaces
+            that consume RESTful APIs while maintaining clean, maintainable code and a smooth, user-focused design
           </p>
         </section>
 
@@ -135,17 +144,42 @@
               proper state management patterns with React hooks for efficient data flow.
             </span>
           </p>
+          <p>
+            <span class="challenge">
+              <span class="challenge-text">Challenge:</span> Seamless integration with backend API for authentication,
+              movie data, and user preferences
+            </span>
+          </p>
+          <p>
+            <span class="solution">
+              <span class="solution-text">Solution:</span> Utilized Axios for HTTP requests with proper error handling,
+              token-based authentication, and loading states
+            </span>
+          </p>
+          <p>
+            <span class="challenge">
+              <span class="challenge-text">Challenge:</span> Building reusable, maintainable components with proper data
+              flow
+            </span>
+          </p>
+          <p>
+            <span class="solution">
+              <span class="solution-text">Solution:</span> Created modular component structure with PropTypes
+              validation, ensuring type safety and component reusability
+            </span>
+          </p>
         </section>
 
         <!-- Lessons Learned -->
         <section class="project-lessons">
           <h2>Lessons Learned</h2>
-          <p>
-            This project enhanced my understanding of React ecosystem, component lifecycle, and modern JavaScript
-            development.
-            I gained experience with React Router, Bootstrap integration, and creating maintainable, scalable front-end
-            applications with proper API integration patterns.
-          </p>
+          <ul>
+            <li>Mastered React component lifecycle and state management with hooks</li>
+            <li>Gained experience with React Router for single-page application navigation</li>
+            <li>Learned to integrate frontend applications with REST APIs using Axios</li>
+            <li>Improved understanding of responsive design with React Bootstrap</li>
+            <li>Practiced user authentication flow and token management in React</li>
+          </ul>
         </section>
 
         <!-- Future Improvements -->
@@ -153,7 +187,6 @@
           <h2>Future Improvements</h2>
           <ul>
             <li>Add advanced filtering and sorting options</li>
-            <li>Implement movie recommendations based on user preferences</li>
             <li>Add social features like reviews and ratings</li>
             <li>Enhance search functionality with auto-suggestions</li>
           </ul>

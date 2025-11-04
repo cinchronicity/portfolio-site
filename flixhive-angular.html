@@ -53,12 +53,17 @@
           <div class="tech-tags">
             <span class="tech-tag">Angular</span>
             <span class="tech-tag">TypeScript</span>
+            <span class="tech-tag">REST API</span>
             <span class="tech-tag">Angular Material</span>
             <span class="tech-tag">RxJS</span>
             <span class="tech-tag">Angular CLI</span>
             <span class="tech-tag">HTML5</span>
-            <span class="tech-tag">SCSS</span>
-            <span class="tech-tag">REST API</span>
+            <span class="tech-tag">CSS3</span>
+            <span class="tech-tag">Node.js & npm</span>
+            <span class="tech-tag">SCSS/SASS</span>
+            <span class="tech-tag">Jsdoc</span>
+            <span class="tech-tag">TypeDoc</span>
+            <span class="tech-tag">Jasmine & Karma</span>
           </div>
         </div>
 
@@ -68,6 +73,10 @@
           <div class="quick-links">
             <a href="https://github.com/cinchronicity/FlixHive-Angular-client" target="_blank" class="quick-link">
               💻 GitHub Repo
+            </a>
+            <a href="https://cinchronicity.github.io/FlixHive-Angular-client/welcome" target="_blank"
+              class="quick-link">
+              🌐 Live App
             </a>
           </div>
         </div>
@@ -82,14 +91,22 @@
             <div class="feature-item">
               <span>Advanced routing and guards</span>
             </div>
-            <div class="feature-item">
-              <span>Reactive forms with validation</span>
-            </div>
+
             <div class="feature-item">
               <span>Observable-based data flow</span>
             </div>
+
             <div class="feature-item">
-              <span>TypeScript type safety</span>
+              <span>Interactive Modal Dialogs</span>
+            </div>
+            <div class="feature-item">
+              <span>Template-Driven Forms - Two-way data binding using ngModel</span>
+            </div>
+            <div class="feature-item">
+              <span>Comprehensive Unit Test Coverage using Jasmine/Karma</span>
+            </div>
+            <div class="feature-item">
+              <span>Technical documentation created with JSDoc and Typedoc</span>
             </div>
           </div>
         </div>
@@ -101,10 +118,12 @@
         <section class="project-overview">
           <h2>Project Overview</h2>
           <p>
-            FlixHive Angular is a sophisticated single-page application built with Angular and Material Design,
-            demonstrating enterprise-level front-end development practices. The application showcases advanced Angular
-            features including reactive programming with RxJS, comprehensive routing, and a polished Material UI
-            experience.
+            The FlixHive Angular App is the client-side of a full-stack movie application built with Angular and Angular
+            Material. It connects to the existing FlixHive API to let users browse movies, view detailed information
+            about
+            genres and directors, and manage their personal profiles and favorite movies. The project highlights modern
+            front-end development practices, component-based architecture, and responsive UI design using Angular’s
+            robust framework.
           </p>
         </section>
 
@@ -115,7 +134,9 @@
             The objective was to master Angular framework fundamentals and advanced concepts including TypeScript,
             reactive programming, and Material Design implementation. This project emphasized creating a
             professional-grade
-            application with proper architecture, testing, and modern development practices.
+            single page application that consumes a RESTful API. It also focused on developing clean, well-documented,
+            and scalable code while practicing Agile methodologies and collaboration skills essential in real-world
+            development environments.
           </p>
         </section>
 
@@ -124,14 +145,42 @@
           <h2>Challenges & Solutions</h2>
           <p>
             <span class="challenge">
-              <span class="challenge-text">Challenge:</span> Learning TypeScript syntax and implementing reactive
-              programming patterns with RxJS observables and operators.
+              <span class="challenge-text">Challenge:</span> Frontend successfully authenticated locally but failed in
+              production due to CORS policy blocking requests between GitHub Pages and Heroku backend.
+
+
             </span>
           </p>
           <p>
             <span class="solution">
-              <span class="solution-text">Solution:</span> Gradually adopted TypeScript best practices and implemented
-              proper observable patterns with operators like map, filter, and catchError for robust data handling.
+              <span class="solution-text">Solution:</span> Modified backend API to allow all origins for portfolio
+              demonstration. Balanced security considerations with accessibility for potential employers to ensure
+              seamless functionality across different deployment environments.
+            </span>
+          </p>
+          <p>
+            <span class="challenge">
+              <span class="challenge-text">Challenge:</span> Application failed to deploy to GitHub Pages due to
+              Angular's updated build output structure and incorrect base href configuration.
+            </span>
+          </p>
+          <p>
+            <span class="solution">
+              <span class="solution-text">Solution:</span> Updated base href from placeholder values to actual GitHub
+              Pages URL. Modified deployment path to accommodate Angular v17+'s new /browser subdirectory structure.
+              Corrected deployment command: npx angular-cli-ghpages --dir=dist/flix-hive-angular-client/browser
+            </span>
+          </p>
+          <p>
+            <span class="challenge">
+              <span class="challenge-text">Challenge:</span>Peer dependency conflicts when installing development tools
+              due to minor version mismatches between Angular packages.
+            </span>
+          </p>
+          <p>
+            <span class="solution">
+              <span class="solution-text">Solution:</span>Used --legacy-peer-deps flag for non-critical development
+              dependencies. Maintained stable core Angular ecosystem while enabling additional tooling.
             </span>
           </p>
         </section>
@@ -139,22 +188,28 @@
         <!-- Lessons Learned -->
         <section class="project-lessons">
           <h2>Lessons Learned</h2>
-          <p>
-            This project significantly enhanced my understanding of enterprise-level front-end development with Angular.
-            I gained expertise in TypeScript, reactive programming, dependency injection, and creating scalable
-            applications
-            with proper separation of concerns and maintainable architecture.
-          </p>
+          <ul>
+            <li>Employed systematic debugging techniques to identify and resolve issues efficiently</li>
+            <li>Adapted to Angular v17+ build structure changes and broke down and solved complex deployment challenges
+              by isolating and addressing multiple technical
+              layers</li>
+            <li>Managed dependencies strategically to maintain Angular ecosystem stability while applying targeted fixes
+            </li>
+            <li>Integrated secure JWT authentication, CORS policies, and RESTful API communication between the Angular
+              frontend and Node.js backend</li>
+            <li>Enhanced project professionalism with thorough TypeDoc documentation, responsive Angular Material
+              design, and a production-ready deployment pipeline</li>
+          </ul>
         </section>
 
         <!-- Future Improvements -->
         <section class="project-future">
           <h2>Future Improvements</h2>
           <ul>
-            <li>Add comprehensive unit and integration tests</li>
-            <li>Implement state management with NgRx</li>
-            <li>Add Progressive Web App capabilities</li>
-            <li>Enhance accessibility with ARIA attributes and screen reader support</li>
+            <li>Add “To Watch” lists alongside favorites</li>
+            <li>Add Progressive Web App capabilities such as offline abilities</li>
+            <li>Enhance accessibility with screen reader support and dark mode</li>
+            <li> Implement real-time user activity feeds and instant movie recommendations using WebSocket</li>
           </ul>
         </section>
       </div>

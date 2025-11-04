@@ -34,7 +34,7 @@
   </header>
 
   <main>
-    <h1 class="project-title">Meet App Project</h1>
+    <h1 class="project-title">Meet</h1>
 
     <!-- Hero Section -->
     <section class="project-hero">
@@ -51,14 +51,23 @@
         <div class="sidebar-section tech-stack-section">
           <h3>🛠️ Tech Stack</h3>
           <div class="tech-tags">
+            <span class="tech-tag">AWS Lambda</span>
+
             <span class="tech-tag">React</span>
+            <span class="tech-tag">React DOM</span>
+            <span class="tech-tag">Recharts</span>
+            <span class="tech-tag">CSS3</span>
             <span class="tech-tag">JavaScript</span>
             <span class="tech-tag">PWA</span>
             <span class="tech-tag">TDD</span>
             <span class="tech-tag">Jest</span>
             <span class="tech-tag">Cucumber</span>
+            <span class="tech-tag">Vite</span>
+            <span class="tech-tag">Babel</span>
+            <span class="tech-tag">Puppeteer</span>
+            <span class="tech-tag">Vercel</span>
+            <span class="tech-tag">Service Worker</span>
             <span class="tech-tag">Google Calendar API</span>
-            <span class="tech-tag">AWS Lambda</span>
           </div>
         </div>
 
@@ -68,6 +77,12 @@
           <div class="quick-links">
             <a href="https://github.com/cinchronicity/Meet" target="_blank" class="quick-link">
               💻 GitHub Repo
+            </a>
+            <a href="https://meet-sandy.vercel.app/" target="_blank" class="quick-link">
+              🌐 Live App
+            </a>
+            <a href="https://meet-sandy.vercel.app/" target="_blank" class="quick-link">
+              📱 Mobile Demo
             </a>
           </div>
         </div>
@@ -91,6 +106,9 @@
             <div class="feature-item">
               <span>Responsive PWA design</span>
             </div>
+            <div class="feature-item">
+              <span>Serverless authentication & API handling via AWS Lambda</span>
+            </div>
           </div>
         </div>
       </aside>
@@ -101,11 +119,11 @@
         <section class="project-overview">
           <h2>Project Overview</h2>
           <p>
-            The Meet App is a serverless Progressive Web Application built with React using a test-driven development
-            approach.
-            It integrates with the Google Calendar API to provide users with a seamless way to discover and manage local
-            events.
-            The app demonstrates advanced React concepts, serverless architecture, and modern web development best
+            The Meet App is a serverless, progressive web application (PWA) built with React using a test-driven
+            development (TDD) approach. It integrates with the Google Calendar API to fetch and display upcoming events,
+            allowing users to search by city, view event details, and visualize event data through interactive charts.
+            The app works both online and offline, offering a seamless user experience across all devices using modern
+            advanced React concepts, serverless architecture, and modern web development best
             practices.
           </p>
         </section>
@@ -114,9 +132,10 @@
         <section class="project-goal">
           <h2>Goal / Purpose</h2>
           <p>
-            The primary goal was to build a comprehensive PWA using test-driven development while learning serverless
-            architecture and advanced React patterns. The project emphasized creating a robust, scalable application
-            with proper testing coverage and offline capabilities.
+            This project demonstrates the ability to build high-quality, scalable applications using serverless
+            architecture, progressive web app principles, and TDD practices. It emphasizes writing maintainable,
+            well-tested code, integrating third-party APIs, and deploying serverless functions through AWS Lambda — all
+            while ensuring a responsive, installable, and reliable user experience.
           </p>
         </section>
 
@@ -135,18 +154,44 @@
               implemented comprehensive error handling and fallback mechanisms.
             </span>
           </p>
+          <p>
+            <span class="challenge">
+              <span class="challenge-text">Challenge:</span> Test coverage for both unit and end-to-end tests in a React
+              PWA
+              environment.
+            </span>
+          </p>
+          <p>
+            <span class="solution">
+              <span class="solution-text">Solution:</span> Implemented multi-layered testing approach using Jest for
+              unit tests, React Testing Library for component integration, and Puppeteer for end-to-end scenarios.
+            </span>
+          </p>
+          <p>
+            <span class="challenge">
+              <span class="challenge-text">Challenge:</span> Ensuring offline functionality and data synchronization in
+              a PWA.
+            </span>
+          </p>
+          <p>
+            <span class="solution">
+              <span class="solution-text">Solution:</span> Implemented Workbox service workers for caching and
+              background sync,
+              ensuring data availability and synchronization when the network is restored.
+            </span>
+          </p>
         </section>
 
         <!-- Lessons Learned -->
         <section class="project-lessons">
           <h2>Lessons Learned</h2>
-          <p>
-            This project deepened my understanding of test-driven development, serverless architecture, and Progressive
-            Web App
-            principles. I gained valuable experience with AWS services, advanced React patterns, and creating
-            applications that
-            work seamlessly both online and offline.
-          </p>
+          <ul>
+            <li>Real-time analytics are crucial for identifying and resolving user experience issues</li>
+            <li>Service workers significantly enhance user experience but require careful cache management</li>
+            <li>Writing tests first improved code quality and reduced debugging time</li>
+            <li>Gained hands-on experience with serverless functions using AWS Lambda</li>
+            <li>Learned how to implement OAuth2 authentication and handle secure API requests</li>
+          </ul>
         </section>
 
         <!-- Future Improvements -->
@@ -155,8 +200,9 @@
           <ul>
             <li>Add social sharing features for events</li>
             <li>Implement user authentication and personalized recommendations</li>
-            <li>Expand data visualization with more chart types</li>
-            <li>Add event creation and management capabilities</li>
+            <li>Event push notification reminders</li>
+            <li>Allow users to bookmark events and create personal event lists</li>
+            <li>Geolocation Integration to auto detect user location for relevant local events</li>
           </ul>
         </section>
       </div>

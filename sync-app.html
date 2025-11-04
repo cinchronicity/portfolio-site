@@ -34,7 +34,7 @@
   </header>
 
   <main>
-    <h1 class="project-title">Sync App Project</h1>
+    <h1 class="project-title">Sync</h1>
 
     <!-- Hero Section -->
     <section class="project-hero">
@@ -53,12 +53,12 @@
           <div class="tech-tags">
             <span class="tech-tag">React Native</span>
             <span class="tech-tag">Expo</span>
+            <span class="tech-tag">React Native Gifted Chat</span>
+            <span class="tech-tag">Expo CLI</span>
             <span class="tech-tag">Firebase</span>
             <span class="tech-tag">Firestore</span>
             <span class="tech-tag">Firebase Auth</span>
             <span class="tech-tag">AsyncStorage</span>
-            <span class="tech-tag">Expo Camera</span>
-            <span class="tech-tag">MapView</span>
           </div>
         </div>
 
@@ -77,12 +77,6 @@
           <h3>✨ Key Features</h3>
           <div class="features-grid">
             <div class="feature-item">
-              <span>Real-time messaging</span>
-            </div>
-            <div class="feature-item">
-              <span>Offline message storage</span>
-            </div>
-            <div class="feature-item">
               <span>Image sharing from camera/gallery</span>
             </div>
             <div class="feature-item">
@@ -90,6 +84,19 @@
             </div>
             <div class="feature-item">
               <span>Anonymous authentication</span>
+            </div>
+            <div class="feature-item">
+              <span>Real-time messaging and message persistence using Google Firestore</span>
+            </div>
+            <div class="feature-item">
+              <span>Offline support with message caching using AsyncStorage</span>
+            </div>
+
+            <div class="feature-item">
+              <span>Anonymous user authentication via Firebase</span>
+            </div>
+            <div class="feature-item">
+              <span>Cross platform compatibility (iOS & Android)</span>
             </div>
           </div>
         </div>
@@ -101,10 +108,10 @@
         <section class="project-overview">
           <h2>Project Overview</h2>
           <p>
-            Sync App is a cross-platform mobile chat application built with React Native and Expo, featuring real-time
-            messaging powered by Firebase Firestore. The app demonstrates mobile development best practices including
-            offline functionality, device feature integration, and cloud-based real-time data synchronization.
-          </p>
+            The React Native Chat App is a cross-platform mobile application built with React Native and Expo that
+            enables users to communicate in real time. It allows users to exchange text messages, share images, and send
+            their current location. The app leverages Google Firestore for cloud data storage and includes offline
+            functionality, ensuring users can access past messages even without an internet connection. </p>
         </section>
 
         <!-- Project Goal -->
@@ -132,17 +139,43 @@
               Firebase Firestore's offline persistence to ensure seamless data synchronization across network states.
             </span>
           </p>
+          <p>
+            <span class="challenge">
+              <span class="challenge-text">Challenge:</span> Media file handling and storage for images or locations
+              sent via chat.
+            </span>
+          </p>
+          <p>
+            <span class="solution">
+              <span class="solution-text">Solution:</span> Integrated Firebase Cloud Storage with Expo ImagePicker to
+              handle image uploads, implementing unique file naming conventions to prevent conflicts.
+            </span>
+          </p>
+          <p>
+            <span class="challenge">
+              <span class="challenge-text">Challenge:</span> Message structure compatibility across iOS and Android
+              platforms.
+            </span>
+          </p>
+          <p>
+            <span class="solution">
+              <span class="solution-text">Solution:</span> Ensured proper message formatting with required fields "(_id,
+              createdAt, user)" to maintain compatibility with React Native Gifted Chat library.
+            </span>
+          </p>
         </section>
 
         <!-- Lessons Learned -->
         <section class="project-lessons">
           <h2>Lessons Learned</h2>
-          <p>
-            This project provided comprehensive experience in mobile development, teaching me React Native concepts,
-            cross-platform development considerations, and mobile-specific UX patterns. I gained valuable knowledge in
-            Firebase services, device API integration, and creating apps that work reliably in various network
-            conditions.
-          </p>
+          <ul>
+            <li>Strengthened understanding of React Native and Expo for cross-platform development</li>
+            <li>Gained experience integrating third-party libraries like Gifted Chat and Firebase Cloud Storage</li>
+            <li>Learned to implement Firebase authentication and real-time database synchronization</li>
+            <li>Console logging is invaluable for debugging asynchronous operations and data flow</li>
+            <li>File upload optimization is necessary for performance with image sharing</li>
+            <li>Conditional rendering based on connection status enhances offline user experience</li>
+          </ul>
         </section>
 
         <!-- Future Improvements -->

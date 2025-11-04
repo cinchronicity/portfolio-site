@@ -156,6 +156,7 @@ button a,
 .navigation-list {
   list-style-type: none; /* removed the bullet points from the list */
   padding-inline-start: 0;
+  padding-right: 30px; 
 }
 
 .navigation-list li {
@@ -533,14 +534,17 @@ input {
     margin: 340px 10px 0;
   }
   .page-header {
-    flex-direction: column;
-    padding: 0;
+
+    flex-direction: row;
+    padding: 10px;
+    align-items: center;
   }
   .navigation__page-header-item:last-child {
-    text-align: center;
+    text-align: right;
   }
   .page-header img {
     width: 100%;
+    max-width: 200px; /* Prevent logo from becoming too large */
   }
   .navigation-list {
     padding: 0;
@@ -616,6 +620,12 @@ input {
   box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
   margin: 20px auto;
   display: block;
+}
+
+/* Mobile app screenshots should be smaller */
+.project-hero-img[src*="sync-app"] {
+  max-width: 500px;
+  width: 100%;
 }
 
 /* Main Layout - Sidebar + Content */

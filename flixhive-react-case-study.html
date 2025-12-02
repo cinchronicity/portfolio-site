@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FlixHive React - Case Study | Cindy's Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap" rel="stylesheet">
+  <link rel="stylesheet" type="text/css"
+    href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+  <link rel="stylesheet" type="text/css" href="css/styles.css">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism-tomorrow.min.css" rel="stylesheet" />
+  <link rel="Icon" href="img/c-favicon.png">
+</head>
+
+<body>
+  <header class="page-header">
+    <img src="img/c-l-triangle-logo.png" class="page-header__item" alt="Cindy Linares name logo">
+    <nav class="navigation__page-header-item">
+      <ul role="menubar" class="navigation-list">
+        <li role="presentation">
+          <a href="index.html" aria-label="home page" role="menuitem" class="navigation-list__item">Home</a>
+        </li>
+        <li role="presentation">
+          <a href="about.html" aria-label="about cindy" class="navigation-list__item" role="menuitem">About</a>
+        </li>
+        <li role="presentation">
+          <a href="projects.html" aria-label="cindy's work" role="menuitem" class="navigation-list__item">Work</a>
+        </li>
+        <li role="presentation">
+          <a href="contact.html" aria-label="contact cindy" role="menuitem" class="navigation-list__item">Contact</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Z-PATTERN TOP SECTION -->
+    <div class="case-study-hero">
+      <div class="hero-content">
+        <!-- Top left: Title & Subtitle -->
+        <div class="hero-title-section">
+          <h1 class="hero-title">FlixHive React Case Study</h1>
+          <p class="hero-subtitle">A comprehensive look at building a modern movie application with React</p>
+        </div>
+
+        <!-- Top right: Overview -->
+        <div class="hero-overview">
+          <p>This case study examines the development process, technical challenges, and solutions implemented while
+            building a full-stack movie application using the MERN stack. It focuses on how I designed a secure API and created the
+            React front end, to create a responsive, user-friendly experience.</p>
+        </div>
+      </div>
+
+
+      <!-- Bottom: Quick Action Buttons -->
+      <div class="hero-actions">
+        <a href="https://github.com/cinchronicity/FlixHive-client" target="_blank" class="hero-btn">
+          GitHub Repo
+        </a>
+        <a href="https://the-flixhive.netlify.app/" target="_blank" class="hero-btn">
+          Live App
+        </a>
+        <a href="projects.html" class="hero-btn hero-btn--secondary">
+          Back to Projects
+        </a>
+      </div>
+      <!-- Center: Wide Screenshot -->
+      <figure class="hero-screenshot">
+        <img src="img/hero-img.png" alt="FlixHive React application overview" class="hero-image">
+      </figure>
+    </div>
+
+
+
+    <!-- F-PATTERN MAIN CONTENT -->
+    <div class="case-study-layout">
+      <!-- Sticky TOC Sidebar (narrow) -->
+      <nav class="case-study-toc">
+        <div class="toc-header">
+          <h3>Contents</h3>
+          <button class="toc-toggle" aria-label="Toggle table of contents">☰</button>
+        </div>
+        <ul class="toc-list">
+          <li><a href="#overview">Overview</a></li>
+          <li><a href="#purpose-goals">Purpose & Goals</a></li>
+          <li><a href="#tech-stack">Tech Stack & Architecture</a></li>
+          <li><a href="#key-features">Key Features</a></li>
+          <li><a href="#ui-ux-flow">UI / UX Flow</a></li>
+          <li><a href="#technical-challenges">Technical Challenges</a></li>
+          <li><a href="#results-feedback">Results & Feedback</a></li>
+          <li><a href="#lessons-learned">Lessons Learned</a></li>
+          <li><a href="#future-improvements">Future Improvements</a></li>
+        </ul>
+      </nav>
+
+      <!-- Main Content Container -->
+      <div class="case-study-content">
+        <!-- Overview -->
+        <section id="overview" class="content-section">
+          <h2 class="section-heading">Overview</h2>
+          <div class="two-col">
+            <div>
+              <p>FlixHive is a responsive movie discovery app that lets users browse films, view details, and manage a
+                personalized list of favorites. It's built with the MERN stack (MongoDB, Express, React, Node.js) and
+                secured with JWT authentication.
+                My goal was to build something that felt like a real production app — clean data models, a secure API,
+                and a
+                smooth UI across both desktop and mobile.</p>
+            </div>
+            <div>
+              <aside class="meta-card">
+                <h3 class="section-subtitle">Project Snapshot</h3>
+                <ul>
+                  <li><strong>Role:</strong> Full-Stack Developer</li>
+                  <li><strong>Stack:</strong> MERN (MongoDB, Express, React, Node) </li>
+                  <li><strong>Duration:</strong> 8 weeks</li>
+                  <li><strong>Focus:</strong> API design, authentication, end-to-end architecture</li>
+                </ul>
+              </aside>
+            </div>
+          </div>
+        </section>
+
+        <!-- Purpose & Goals -->
+        <section class="content-section" id="purpose-goals">
+          <h2 class="section-heading">Purpose & Goals</h2>
+          <div class="two-col">
+            <div>
+              <h3 class="section-subtitle">Why This Project</h3>
+              <p>I wanted to move beyond tutorial-style builds and create something that reflected the kind of work a
+                junior developer would do on a real team. FlixHive became my first full end-to-end project where I had
+                to think like an engineer — structuring data models, securing APIs, managing state, and deploying an app
+                that other people could actually use.</p>
+            </div>
+            <div>
+              <h3 class="section-subtitle">What I Wanted to Learn</h3>
+              <ul>
+                <li>Design scalable data structures for movies and users</li>
+                <li>Implement authentication, protected routes, and secure API flows</li>
+                <li>Keep the React UI reliably in sync with backend data</li>
+                <li>Deploy both client and server with real-world constraints</li>
+                <li>Build confidence owning a feature from database to front end</li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+        <!-- Tech Stack & Architecture -->
+        <section id="tech-stack" class="content-section">
+          <h2 class="section-heading">Tech Stack & Architecture</h2>
+
+          <!-- Top row: Tech Stack + Architecture summary -->
+          <div class="tech-stack-arch">
+            <div class="tech-stack-section">
+              <h3 class="section-subheading">Tech Stack</h3>
+              <div class="tech-tags">
+                <span>React</span>
+                <span>React Router</span>
+                <span>Bootstrap</span>
+                <span>Custom CSS</span>
+                <span>Node.js</span>
+                <span>Express</span>
+                <span>MongoDB</span>
+                <span>Mongoose</span>
+                <span>JWT</span>
+                <span>Passport LocalStrategy</span>
+                <span>Netlify</span>
+                <span>Heroku</span>
+              </div>
+            </div>
+
+            <div class="architecture-section">
+              <h3 class="section-subheading">Architecture</h3>
+              <p class="architecture-copy">
+                FlixHive uses a classic MERN architecture: a React client talks to a Node/Express API
+                that sits in front of a MongoDB database. The client owns routing, UI state, and
+                rendering, while the server handles authentication, validation, and data access.
+                JWT and Passport protect private routes, and Mongoose models keep movie and user
+                data consistent. The client and server communicate over REST endpoints using
+                environment-based API URLs, so development and production behave the same way.
+              </p>
+            </div>
+          </div>
+
+          <!-- Server side Implementation -->
+          <section class="arch-subsection arch-subsection--server">
+            <div class="arch-inner">
+              <div class="arch-text">
+                <h3 class="arch-heading">Server Side (Node / Express / MongoDB)</h3>
+
+                <p class="arch-summary">
+                  The server is a Node/Express API responsible for
+                  authentication, validation,
+                  and all access to the MongoDB database. Passport and JWT protect private
+                  routes, while Mongoose models store movie and user data. By keeping all
+                  business logic on the server, the client stays lightweight and interacts
+                  with the database only through structured REST endpoints.
+                </p>
+              </div>
+
+              <figure class="arch-code">
+                <h4 class="arch-code-label">Endpoint: <code>GET /movies</code></h4>
+
+                <pre class="arch-code-block"><code class="language-javascript">
+app.get(
+  "/movies",
+  passport.authenticate("jwt", { session: false }),
+  async (req, res) => {
+    try {
+      const movies = await Movies.find()
+        .populate("actors", "name birthYear");
+
+      return res.status(200).json(movies);
+    } catch (err) {
+      console.error("Error fetching movies:", err);
+      return res.status(500).send("Error: " + err);
+    }
+  }
+);
+      </code></pre>
+
+                <figcaption class="arch-code-caption">
+                  Protected <code>/movies</code> endpoint: authenticates with Passport JWT,
+                  queries MongoDB via Mongoose, and returns all movies with referenced actors populated.
+                </figcaption>
+              </figure>
+            </div>
+          </section>
+
+          <!-- Client side implementation -->
+          <section class="arch-subsection arch-subsection--client">
+            <div class="arch-inner">
+              <div class="arch-text">
+                <h3 class="arch-heading">Client Side (React)</h3>
+
+                <p class="arch-summary">
+                  The client side is built with React and is responsible for routing, UI state,
+                  component rendering, and communicating with the Express backend. When an
+                  authenticated user loads the app, the React client attaches a JWT to each
+                  request, retrieves movies from the API, and updates local state so the UI
+                  stays in sync with the database. Error handling guards against token issues, expired sessions, and network errors. 
+                </p>
+              </div>
+
+              <figure class="arch-code">
+                <h4 class="arch-code-label">Fetching movies from the API</h4>
+
+                <pre class="arch-code-block"><code class="language-javascript">
+useEffect(() => {
+  const fetchMovies = async () => {
+    try {
+      const response = await fetch(
+        "https://flixhive-api.herokuapp.com/movies",
+        {
+          headers: {
+            Authorization: `Bearer ${token}`,
+          },
+        }
+      );
+
+      if (!response.ok) {
+        throw new Error("Failed to fetch movies");
+      }
+
+      const data = await response.json();
+      setMovies(data);
+    } catch (error) {
+      console.error("Error loading movies:", error);
+    }
+  };
+
+  fetchMovies();
+}, [token]);
+      </code></pre>
+
+                <figcaption class="arch-code-caption">
+                  Protected movie fetch on the client: requests the <code>/movies</code>
+                  endpoint with a JWT, parses the response, and updates React state to
+                  render the movie catalog.
+                </figcaption>
+              </figure>
+            </div>
+          </section>
+        </section>
+
+
+        <!-- Key Features -->
+        <section id="key-features" class="content-section">
+          <h2 class="section-heading">Key Features</h2>
+          <p>FlixHive focuses on a few core user flows that showcase the full stack working together.</p>
+
+          <ul class="features-list">
+            <li>Browse a catalog of movies with key details at a glance
+            </li>
+            <li>View a dedicated movie detail page with genre, director, and description
+            </li>
+            <li>See “Similar Movies” recommendations on the movie detail page
+            </li>
+            <li>Create an account, log in, and persist session with JWT
+            </li>
+            <li>Add or remove movies from a personalized favorites list
+            </li>
+            <li>Edit profile information (username, email, birthdate, password) from the app
+            </li>
+            <li>Enjoy a responsive layout that adapts to smaller screen sizes
+            </li>
+          </ul>
+        </section>
+
+        <!-- UI / UX Flow -->
+        <section id="ui-ux-flow" class="content-section">
+          <h2 class="section-heading">UI / UX Flow</h2>
+          <p>The interface uses familiar streaming-style card layouts, clear hierarchy, and predictable navigation.
+            Each
+            screen focuses on one primary action — browsing, viewing details, or managing a user profile — making
+            the
+            experience feel intuitive for new users.</p>
+
+          <div class="screenshots-grid">
+            <figure class="screenshot-item">
+              <img src="img/landingPage.png" alt="Landing page interface">
+              <figcaption>Screen 1: Landing Page</figcaption>
+            </figure>
+
+            <figure class="screenshot-item">
+              <img src="img/movieDetails.png" alt="Movie details interface">
+              <figcaption>Screen 2: Movie Details</figcaption>
+            </figure>
+
+            <figure class="screenshot-item">
+              <img src="img/profileDetails.png" alt="User profile interface">
+              <figcaption>Screen 3: User Profile</figcaption>
+            </figure>
+
+            <figure class="screenshot-item">
+              <img src="img/loginPage.png" alt="Login page interface">
+              <figcaption>Screen 4: Login Page</figcaption>
+            </figure>
+          </div>
+        </section>
+
+        <!-- Technical Challenges & Solutions -->
+        <section id="technical-challenges" class="content-section">
+          <h2 class="section-heading">Technical Challenges & Solutions</h2>
+          <p>Rather than only documenting what works, I wanted this case study to highlight a few of the areas I
+            struggled on and I
+            and how I resolved them.</p>
+
+          <!-- Challenge 1 -->
+          <div class="challenge-item">
+            <h3>Challenge 1: State Management</h3>
+            <div class="challenge-layout">
+              <figure class="challenge-code">
+                <h4 class="arch-code-label">State synchronization with backend</h4>
+
+                <pre class="arch-code-block"><code class="language-javascript">useEffect(() => {
+  if (!token) return;
+
+  axios
+    .get("https://flixhive-cf7fbbd939d2.herokuapp.com/movies", {
+      headers: { Authorization: `Bearer ${token}` },
+    })
+    .then((response) => {
+      const moviesFromApi = response.data.map((doc) => ({
+        id: doc._id,
+        title: doc.title,
+        description: doc.description,
+        genre: {
+          name: doc.genre.name,
+          description: doc.genre.description,
+        },
+        director: {
+          name: doc.director.name,
+          bio: doc.director.bio,
+          birthYear: doc.director.birthYear,
+          deathYear: doc.director.deathYear,
+        },
+        imageURL: doc.imageURL,
+        rating: doc.rating,
+        featured: doc.featured,
+        actors: doc.actors,
+      }));
+      setMovies(moviesFromApi);
+    })
+    .catch((error) => {
+      console.error("Error fetching movies:", error);
+    });
+}, [token]);
+</code></pre>
+
+                <figcaption class="arch-code-caption">
+                  Centralized movie data transformation: fetches from API, maps MongoDB documents
+                  to UI models, and updates React state in one controlled flow.
+                </figcaption>
+              </figure>
+              <div class="challenge-explanation">
+                <p><strong>Challenge:</strong> Keeping React state synced with the backend was tricky, especially
+                  when mapping MongoDB documents into UI-friendly models.</p>
+                <p><strong>Solution:</strong> I centralized all movie transformations inside one useEffect after
+                  authentication. This ensured every component received consistent data, reducing rendering bugs across favorites, movie details, and profile screens.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Challenge 2 -->
+          <div class="challenge-item">
+            <h3>Challenge 2: API Integration</h3>
+            <div class="challenge-layout">
+              <figure class="challenge-code">
+                <h4 class="arch-code-label">JWT-secured API request</h4>
+
+                <pre class="arch-code-block"><code class="language-javascript">axios
+  .put(
+    `https://flixhive-cf7fbbd939d2.herokuapp.com/users/${username}`,
+    updatedUser,
+    {
+      headers: { Authorization: `Bearer ${token}` },
+    }
+  )
+  .then((response) => {
+    alert("Profile updated successfully!");
+    handleUserUpdate(response.data);
+  })
+  .catch((error) => {
+    console.error("Error updating profile:", error);
+    alert("Something went wrong while updating your profile.");
+  });
+</code></pre>
+
+                <figcaption class="arch-code-caption">
+                  Secure profile update: sends JWT with request, handles success/error states,
+                  and updates local user data to keep UI in sync.
+                </figcaption>
+              </figure>
+              <div class="challenge-explanation">
+                <p><strong>Challenge:</strong> I needed a reliable way to authenticate users, attach JWTs to protected requests, and return meaningful errors when something went wrong.</p>
+                <p><strong>Solution:</strong> I implemented JWT authentication through Passport’s LocalStrategy. The server returns a signed token on login, which the client stores and attaches to every request via the Authorization header. The API returns clear, descriptive errors that improve the user experience when credentials are invalid or tokens expire.</p>
+              </div>
+            </div>
+          </div>
+
+        </section>
+
+        <!-- Results & Mentor Feedback -->
+        <section id="results-feedback" class="content-section">
+          <h2 class="section-heading">Results & Mentor Feedback</h2>
+          <p class="results-summary">FlixHive is fully deployed — the React client on Netlify and the Node/Express API on Heroku. After deployment, I manually tested all major flows (login, registration, favorites, and profile updates) using both Postman and real in-browser interactions. This validated smooth API communication, correct data flow, and consistent behavior across environments.</p>
+
+          <div class="mentor-feedback">
+            <blockquote>
+              <p>“You fixed the signup issue, and it now functions flawlessly. I’m particularly impressed by how refined
+                and well-thought-out your solution is — the UI looks clean, the details are polished, and the product
+                feels production-ready.
+                This is the kind of work I showcase to other students as an example of a strong full-stack project.”
+              </p>
+              <cite>— Ammar Khan, Carerer Foundry Software Development Mentor</cite>
+            </blockquote>
+
+          </div>
+          <p class="results-summary">
+            This project strengthened my React and Express fundamentals while giving me hands-on experience building,
+            testing, and deploying a full-stack application from end to end.
+          </p>
+        </section>
+        <!-- Lessons Learned + Future Improvements Section Pair -->
+        <div class="section-pair">
+          <!-- Lessons Learned -->
+          <section id="lessons-learned" class="content-section">
+            <h2 class="section-heading">Lessons Learned</h2>
+            <ul class="lessons-list">
+              <li>Clear data models early makes front-end decisions much easier</li>
+              <li>Robust validation is critical for real-world apps</li>
+              <li>Centralized state logic reduces bugs across the UI</li>
+              <li>Deployment takes iteration — logs and incremental changes matter</li>
+
+            </ul>
+          </section>
+
+          <!-- Future Improvements -->
+          <section id="future-improvements" class="content-section">
+            <h2 class="section-heading">Future Improvements</h2>
+            <ul class="improvements-list">
+              <li>Add filters by genre, director, rating, and release year</li>
+              <li>Introduce pagination or infinite scrolling for large movie catalogs</li>
+              <li>Improve accessibility with additional keyboard navigation and ARIA landmarks</li>
+              <li>Add unit tests and integration tests for critical flows</li>
+            </ul>
+          </section>
+        </div>
+      </div>
+    </div>
+
+    <!-- Project Navigation -->
+    <nav class="project-navigation">
+      <a href="flixhive-react.html" class="nav-button">
+        ← Back to FlixHive React
+      </a>
+      <a href="projects.html" class="nav-button back-to-projects">
+        ↑ All Projects
+      </a>
+      <a href="flixhive-angular.html" class="nav-button">
+        Next: FlixHive Angular →
+      </a>
+    </nav>
+  </main>
+
+  <footer class="page__footer">
+    <p>Connect with me!</p>
+    <div class="social__media">
+      <a href="https://github.com/cinchronicity" target="_blank" aria-label="Visit my GitHub profile">
+        <img src="img/github-logo.svg" alt="Github">
+      </a>
+      <a href="https://www.linkedin.com/in/cindylinares" target="_blank" aria-label="Visit my LinkedIn profile">
+        <img src="img/linkedin-logo.svg" alt="LinkedIn">
+      </a>
+    </div>
+  </footer>
+
+  <script src="js/tota11y.min.js"></script>
+  <!-- Prism.js for syntax highlighting -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-javascript.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-jsx.min.js"></script>
+</body>
+
+</html>

@@ -47,7 +47,8 @@
         <!-- Top right: Overview -->
         <div class="hero-overview">
           <p>This case study examines the development process, technical challenges, and solutions implemented while
-            building a full-stack movie application using the MERN stack. It focuses on how I designed a secure API and created the
+            building a full-stack movie application using the MERN stack. It focuses on how I designed a secure API and
+            created the
             React front end, to create a responsive, user-friendly experience.</p>
         </div>
       </div>
@@ -79,9 +80,10 @@
       <nav class="case-study-toc">
         <div class="toc-header">
           <h3>Contents</h3>
-          <button class="toc-toggle" aria-label="Toggle table of contents">☰</button>
+          <button class="toc-toggle" aria-label="Toggle table of contents" aria-expanded="false"
+            aria-controls="toc-navigation">☰</button>
         </div>
-        <ul class="toc-list">
+        <ul class="toc-list" id="toc-navigation">
           <li><a href="#overview">Overview</a></li>
           <li><a href="#purpose-goals">Purpose & Goals</a></li>
           <li><a href="#tech-stack">Tech Stack & Architecture</a></li>
@@ -239,7 +241,8 @@ app.get(
                   component rendering, and communicating with the Express backend. When an
                   authenticated user loads the app, the React client attaches a JWT to each
                   request, retrieves movies from the API, and updates local state so the UI
-                  stays in sync with the database. Error handling guards against token issues, expired sessions, and network errors. 
+                  stays in sync with the database. Error handling guards against token issues, expired sessions, and
+                  network errors.
                 </p>
               </div>
 
@@ -398,7 +401,8 @@ useEffect(() => {
                 <p><strong>Challenge:</strong> Keeping React state synced with the backend was tricky, especially
                   when mapping MongoDB documents into UI-friendly models.</p>
                 <p><strong>Solution:</strong> I centralized all movie transformations inside one useEffect after
-                  authentication. This ensured every component received consistent data, reducing rendering bugs across favorites, movie details, and profile screens.</p>
+                  authentication. This ensured every component received consistent data, reducing rendering bugs across
+                  favorites, movie details, and profile screens.</p>
               </div>
             </div>
           </div>
@@ -434,8 +438,12 @@ useEffect(() => {
                 </figcaption>
               </figure>
               <div class="challenge-explanation">
-                <p><strong>Challenge:</strong> I needed a reliable way to authenticate users, attach JWTs to protected requests, and return meaningful errors when something went wrong.</p>
-                <p><strong>Solution:</strong> I implemented JWT authentication through Passport’s LocalStrategy. The server returns a signed token on login, which the client stores and attaches to every request via the Authorization header. The API returns clear, descriptive errors that improve the user experience when credentials are invalid or tokens expire.</p>
+                <p><strong>Challenge:</strong> I needed a reliable way to authenticate users, attach JWTs to protected
+                  requests, and return meaningful errors when something went wrong.</p>
+                <p><strong>Solution:</strong> I implemented JWT authentication through Passport’s LocalStrategy. The
+                  server returns a signed token on login, which the client stores and attaches to every request via the
+                  Authorization header. The API returns clear, descriptive errors that improve the user experience when
+                  credentials are invalid or tokens expire.</p>
               </div>
             </div>
           </div>
@@ -445,7 +453,10 @@ useEffect(() => {
         <!-- Results & Mentor Feedback -->
         <section id="results-feedback" class="content-section">
           <h2 class="section-heading">Results & Mentor Feedback</h2>
-          <p class="results-summary">FlixHive is fully deployed — the React client on Netlify and the Node/Express API on Heroku. After deployment, I manually tested all major flows (login, registration, favorites, and profile updates) using both Postman and real in-browser interactions. This validated smooth API communication, correct data flow, and consistent behavior across environments.</p>
+          <p class="results-summary">FlixHive is fully deployed — the React client on Netlify and the Node/Express API
+            on Heroku. After deployment, I manually tested all major flows (login, registration, favorites, and profile
+            updates) using both Postman and real in-browser interactions. This validated smooth API communication,
+            correct data flow, and consistent behavior across environments.</p>
 
           <div class="mentor-feedback">
             <blockquote>
@@ -522,6 +533,23 @@ useEffect(() => {
   <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-javascript.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-jsx.min.js"></script>
+
+  <!-- Mobile TOC Toggle -->
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      const toggleButton = document.querySelector('.toc-toggle');
+      const tocList = document.querySelector('.toc-list');
+
+      if (toggleButton && tocList) {
+        toggleButton.addEventListener('click', function () {
+          tocList.classList.toggle('active');
+          // Update aria-expanded for accessibility
+          const isExpanded = tocList.classList.contains('active');
+          toggleButton.setAttribute('aria-expanded', isExpanded);
+        });
+      }
+    });
+  </script>
 </body>
 
 </html>
